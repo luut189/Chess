@@ -25,10 +25,12 @@ public class Piece {
     final static int N = 5;
     final static int P = 6;
     
-    private final static String[] pieceTypes = {"None", "K", "Q", "R", "B", "N", "P"};
+    private final static String[] pieceTypes = {"-", "K", "Q", "R", "B", "N", "P"};
 
     final static int White = 8;
     final static int Black = 16;
+
+    static int[][] numSquaresToEdge = new int[64][8];
 
     public static Image getPiece(int piece) {
         if(piece == 0) {
@@ -39,6 +41,15 @@ public class Piece {
             int pieceIndex = Integer.parseInt(binaryPiece.substring(1,binaryPiece.length()), 2);
             return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceIndex] + ".png").getImage();
         }
+    }
+
+    public static boolean isColor(int piece, int targetPiece) {
+        return Integer.toBinaryString(piece).length() == Integer.toBinaryString(targetPiece).length();
+    }
+
+    public static String getPieceType(int piece) {
+        if(piece != 0) return pieceTypes[Integer.parseInt(Integer.toBinaryString(piece).substring(1), 2)];
+        else return "-";
     }
 
     public static void decryptFen(String fen, int[][] board) {
@@ -65,6 +76,30 @@ public class Piece {
                     board[rank][file] = pieceColor | pieceType;
                     file++;
                 }
+            }
+        }
+    }
+
+    public static void computeData() {
+        for(int rank = 0; rank < 8; rank++) {
+            for(int file = 0; file < 8; file++) {
+                int top = rank;
+                int bottom = 7 - rank;
+                int left = file;
+                int right = 7 - file;
+
+                int[] data = {
+                    top,
+                    bottom,
+                    left,
+                    right,
+                    Math.min(top, left),
+                    Math.min(top, right),
+                    Math.min(bottom, left),
+                    Math.min(bottom, right)
+                };
+
+                numSquaresToEdge[rank * 8 + file] = data;
             }
         }
     }
