@@ -28,6 +28,7 @@ public class Board extends JPanel {
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     
     String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
+    String testFen = "rbq5/8/8/8/8/8/8/5QBR";
 
     Board(int width, int height) {
         chessBoard = new int[8][8];
@@ -39,8 +40,7 @@ public class Board extends JPanel {
         this.addMouseListener(new mouseAdapter());
 
         clearBoard();
-        Piece.decryptFen(startFen, chessBoard);
-        chessBoard[4][4] = Piece.White | Piece.Q;
+        Piece.decryptFen(testFen, chessBoard);
     }
 
     public void clearBoard() {
