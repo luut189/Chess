@@ -137,15 +137,21 @@ public class Board extends JPanel {
                 } else {
                     selectedRank = e.getY()/size; // rank
                     selectedFile = e.getX()/size; // file
-                    String currentPiece = Piece.getPieceType(chessBoard[selectedRank][selectedFile]);
-                    if(!currentPiece.equals("-")) {
-                        boolean isSlidingPiece = currentPiece.equals("R") || currentPiece.equals("B") || currentPiece.equals("Q");
-                        boolean isKing = currentPiece.equals("K");
-                        boolean isKnight = currentPiece.equals("N");
-                        boolean isPawn = currentPiece.equals("P");
+                    int currentPiece = Piece.getPieceType(chessBoard[selectedRank][selectedFile]);
+                    if(!(currentPiece == Piece.None)) {
+                        boolean isSlidingPiece = currentPiece == Piece.R || currentPiece == Piece.B || currentPiece == Piece.Q;
+                        boolean isKing = currentPiece == Piece.K;
+                        boolean isKnight = currentPiece == Piece.N;
+                        boolean isPawn = currentPiece == Piece.P;
 
                         if(isSlidingPiece) {
                             currentAvailableMove = Move.generateSlidingMove(chessBoard, chessBoard[selectedRank][selectedFile], selectedRank, selectedFile);
+                        } else if(isKing) {
+
+                        } else if(isKnight) {
+
+                        } else if(isPawn) {
+
                         }
                         hasSelected = true;
                     }

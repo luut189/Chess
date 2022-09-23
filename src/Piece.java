@@ -30,26 +30,29 @@ public class Piece {
     final static int White = 8;
     final static int Black = 16;
 
+    final static int typeMask = 0b00111;
+    final static int blackMask = 0b10000;
+    final static int whiteMask = 0b01000;
+    final static int colorMask = whiteMask | blackMask;
+
     static int[][] numSquaresToEdge = new int[64][8];
 
     public static Image getPiece(int piece) {
         if(piece == 0) {
             return new ImageIcon("./Pieces/None.png").getImage();
         } else {
-            String binaryPiece = Integer.toBinaryString(piece);
-            String pieceColor = (binaryPiece.length() == 4) ? "W" : "B";
-            int pieceIndex = Integer.parseInt(binaryPiece.substring(1,binaryPiece.length()), 2);
-            return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceIndex] + ".png").getImage();
+            int pieceType = piece & typeMask;
+            String pieceColor = (piece & colorMask) == Piece.White ? "W" : "B";
+            return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
         }
     }
 
     public static boolean isColor(int piece, int targetPiece) {
-        return Integer.toBinaryString(piece).length() == Integer.toBinaryString(targetPiece).length();
+        return (piece & colorMask) == (targetPiece & colorMask);
     }
 
-    public static String getPieceType(int piece) {
-        if(piece != 0) return pieceTypes[Integer.parseInt(Integer.toBinaryString(piece).substring(1), 2)];
-        else return "-";
+    public static int getPieceType(int piece) {
+        return piece & typeMask;
     }
 
     public static void decryptFen(String fen, int[][] board) {

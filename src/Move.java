@@ -25,8 +25,8 @@ public class Move {
     };
 
     public static ArrayList<Move> generateSlidingMove(int[][] board, int piece, int currentRank, int currentFile) {
-        int startDirIndex = (Piece.getPieceType(piece).equals("B")) ? 4 : 0;
-        int endDirIndex = (Piece.getPieceType(piece).equals("R")) ? 4 : 8;
+        int startDirIndex = (Piece.getPieceType(piece) == Piece.B) ? 4 : 0;
+        int endDirIndex = (Piece.getPieceType(piece) == Piece.R) ? 4 : 8;
         int startSquare = currentRank * 8 + currentFile;
 
         ArrayList<Move> availableMove = new ArrayList<>();
@@ -41,7 +41,7 @@ public class Move {
                 
                 if(Piece.isColor(piece, pieceOnTarget)) break;
                 availableMove.add(new Move(targetRank, targetFile));
-                if(!Piece.getPieceType(pieceOnTarget).equals("-")) {
+                if(!(Piece.getPieceType(pieceOnTarget) == Piece.None)) {
                     if(!Piece.isColor(piece, pieceOnTarget)) {
                         break;
                     }
