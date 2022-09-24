@@ -24,11 +24,13 @@ public class Board extends JPanel {
     boolean hasSelected = false;
     
     int chessBoard[][];
+    int currentTurn = 1;
+    int playerToMove = currentTurn % 2 == 0 ? Piece.Black : Piece.White;
 
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     
     String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
-    String testFen = "rbq5/8/8/8/8/8/8/5QBR";
+    String testFen = "rbqn4/8/8/8/8/8/8/4NQBR";
 
     Board(int width, int height) {
         chessBoard = new int[8][8];
@@ -81,8 +83,10 @@ public class Board extends JPanel {
     }
 
     public void drawSelected(Graphics g) {
+        Color rightColor = new Color(0, 0, 255, 75);
+        Color wrongColor = new Color(255, 0, 0, 75);
         if(!(selectedRank == -1 || selectedFile == -1)) {
-            g.setColor(new Color(0, 0, 255, 75));
+            g.setColor(Piece.isTurnToMove(chessBoard[selectedRank][selectedFile], playerToMove) ? rightColor : wrongColor);
             g.fillRect(selectedFile*size, selectedRank*size, size, size);
         }
     }
@@ -114,11 +118,15 @@ public class Board extends JPanel {
         repaint();
     }
 
+    public void getCurrentTurn() {
+        playerToMove = currentTurn % 2 == 0 ? Piece.Black : Piece.White;
+    }
+
     class mouseAdapter extends MouseAdapter {
         @Override
         public void mouseClicked(MouseEvent e) {
             if(SwingUtilities.isLeftMouseButton(e)) {
-                if(hasSelected && chessBoard[selectedRank][selectedFile] != Piece.None) {
+                if(hasSelected && chessBoard[selectedRank][selectedFile] != Piece.None && Piece.isTurnToMove(chessBoard[selectedRank][selectedFile], playerToMove)) {
                     movedRank = e.getY()/size;
                     movedFile = e.getX()/size;
                     int currentPiece = chessBoard[selectedRank][selectedFile];
@@ -130,6 +138,9 @@ public class Board extends JPanel {
                             if(movedRank == rank && movedFile == file) {
                                 chessBoard[movedRank][movedFile] = currentPiece;
                                 chessBoard[selectedRank][selectedFile] = Piece.None;
+                                currentTurn++;
+                                getCurrentTurn();
+                                break;
                             }
                         }
                     }
@@ -137,23 +148,12 @@ public class Board extends JPanel {
                 } else {
                     selectedRank = e.getY()/size; // rank
                     selectedFile = e.getX()/size; // file
-                    int currentPiece = Piece.getPieceType(chessBoard[selectedRank][selectedFile]);
-                    if(!(currentPiece == Piece.None)) {
-                        boolean isSlidingPiece = currentPiece == Piece.R || currentPiece == Piece.B || currentPiece == Piece.Q;
-                        boolean isKing = currentPiece == Piece.K;
-                        boolean isKnight = currentPiece == Piece.N;
-                        boolean isPawn = currentPiece == Piece.P;
-
-                        if(isSlidingPiece) {
-                            currentAvailableMove = Move.generateSlidingMove(chessBoard, chessBoard[selectedRank][selectedFile], selectedRank, selectedFile);
-                        } else if(isKing) {
-
-                        } else if(isKnight) {
-
-                        } else if(isPawn) {
-
-                        }
+                    int currentPiece = chessBoard[selectedRank][selectedFile];
+                    if(Piece.isTurnToMove(currentPiece, playerToMove)) {
+                        currentAvailableMove = Move.generateMove(chessBoard, currentPiece, selectedRank, selectedFile);
                         hasSelected = true;
+                    } else {
+                        currentAvailableMove = new ArrayList<>();
                     }
                     repaint();
                 }

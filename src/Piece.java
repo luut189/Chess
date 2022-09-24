@@ -41,7 +41,7 @@ public class Piece {
         if(piece == 0) {
             return new ImageIcon("./Pieces/None.png").getImage();
         } else {
-            int pieceType = piece & typeMask;
+            int pieceType = getPieceType(piece);
             String pieceColor = (piece & colorMask) == Piece.White ? "W" : "B";
             return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
         }
@@ -55,6 +55,14 @@ public class Piece {
         return piece & typeMask;
     }
 
+    public static int getPieceColor(int piece) {
+        return piece & colorMask;
+    }
+
+    public static boolean isTurnToMove(int selectedPiece, int playerToMove) {
+        return getPieceColor(selectedPiece) == playerToMove;
+    }
+
     public static void decryptFen(String fen, int[][] board) {
         HashMap<Character, Integer> symbolToPiece = new HashMap<>();
         symbolToPiece.put('k', Piece.K);
@@ -64,17 +72,17 @@ public class Piece {
         symbolToPiece.put('n', Piece.N);
         symbolToPiece.put('p', Piece.P);
 
-        int file = 0, rank = 7;
+        int file = 0, rank = 0;
 
         for(char symbol : fen.toCharArray()) {
             if(symbol == '/') {
                 file = 0;
-                rank--;
+                rank++;
             } else {
                 if(Character.isDigit(symbol)) {
                     file += Character.getNumericValue(symbol);
                 } else {
-                    int pieceColor = !Character.isUpperCase(symbol) ? Piece.White : Piece.Black;
+                    int pieceColor = Character.isUpperCase(symbol) ? Piece.White : Piece.Black;
                     int pieceType = symbolToPiece.get(Character.toLowerCase(symbol));
                     board[rank][file] = pieceColor | pieceType;
                     file++;
