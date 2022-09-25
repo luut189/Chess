@@ -24,13 +24,12 @@ public class Board extends JPanel {
     boolean hasSelected = false;
     
     int chessBoard[][];
-    int currentTurn = 1;
-    int playerToMove = currentTurn % 2 == 0 ? Piece.Black : Piece.White;
+    int currentTurn, playerToMove;
 
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     
-    String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
-    String testFen = "rbqn4/8/8/8/8/8/8/4NQBR";
+    String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w";
+    String testFen = "rbqnp3/8/8/8/8/8/8/3PNQBR b";
 
     Board(int width, int height) {
         chessBoard = new int[8][8];
@@ -42,7 +41,10 @@ public class Board extends JPanel {
         this.addMouseListener(new mouseAdapter());
 
         clearBoard();
-        Piece.decryptFen(testFen, chessBoard);
+        Piece.decryptFen(startFen, chessBoard);
+        Piece.computePawnStartingPoint(chessBoard);
+        playerToMove = Piece.getPlayerToMove();
+        currentTurn = playerToMove == Piece.White ? 1 : 0;
     }
 
     public void clearBoard() {
@@ -140,6 +142,9 @@ public class Board extends JPanel {
                                 chessBoard[selectedRank][selectedFile] = Piece.None;
                                 currentTurn++;
                                 getCurrentTurn();
+                                /* to print out FEN string for every move
+                                System.out.println(Piece.encryptFen(chessBoard, playerToMove));
+                                */
                                 break;
                             }
                         }

@@ -37,6 +37,20 @@ public class Move {
         {2, -1}, // down 2 left
         {2, 1}   // down 2 right
     };
+    
+    final static int[][] possiblePawnDir = {
+        // white
+        {-1, -1}, // capture piece left
+        {-1, 1},  // capture piece right
+        {-1, 0},  // normal push
+        {-2, 0},  // double push
+
+        // black
+        {1, -1}, // capture piece left
+        {1, 1},  // capture piece right
+        {1, 0},  // normal push
+        {2, 0},  // double push
+    };
 
     public static ArrayList<Move> generateMove(int[][] board, int piece, int currentRank, int currentFile) {
         ArrayList<Move> availableMove = new ArrayList<>();
@@ -51,7 +65,7 @@ public class Move {
             } else if(pieceType == Piece.N) {
                 availableMove = generateKnightMove(board, piece, currentRank, currentFile);
             } else if(pieceType == Piece.P) {
-                availableMove = new ArrayList<>();
+                availableMove = generatePawnMove(board, piece, currentRank, currentFile);
             }
         } else {
             availableMove = new ArrayList<>();
@@ -92,13 +106,53 @@ public class Move {
         for(int i = 0; i < possibleKnightDir.length; i++) {
             int targetRank = currentRank + possibleKnightDir[i][0];
             int targetFile = currentFile + possibleKnightDir[i][1];
-            if((targetRank >= 0 && targetRank < 8) && (targetFile >= 0 && targetFile < 8)) {
+            if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
-            
                 if(Piece.isColor(piece, pieceOnTarget)) continue;
                 availableMove.add(new Move(targetRank, targetFile));
             } else continue;
         }
+        return availableMove;
+    }
+
+    public static ArrayList<Move> generatePawnMove(int[][] board, int piece, int currentRank, int currentFile) {
+        ArrayList<Move> availableMove = new ArrayList<>();
+
+        int pieceColor = Piece.getPieceColor(piece);
+        int doublePushIndex = pieceColor == Piece.White ? 3 : 7;
+        int startDirIndex = pieceColor == Piece.White ? 0 : 4;
+        
+        for(int i = startDirIndex; i < startDirIndex+2; i++) {
+            int targetRank = currentRank + possiblePawnDir[i][0];
+            int targetFile = currentFile + possiblePawnDir[i][1];
+            if(Piece.isInRange(targetRank, targetFile)) {
+                int pieceOnTarget = board[targetRank][targetFile];
+                if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
+                    if(!Piece.isColor(piece, pieceOnTarget)) {
+                        availableMove.add(new Move(targetRank, targetFile));
+                    } else continue;
+                } else continue;
+            }
+        }
+
+        if(Piece.isOnStartingPoint(currentRank, currentFile)) {
+            for(int i = doublePushIndex-1; i < doublePushIndex+1; i++) {
+                int targetRank = currentRank + possiblePawnDir[i][0];
+                int targetFile = currentFile + possiblePawnDir[i][1];
+                if(Piece.isInRange(targetRank, targetFile)) {
+                    int pieceOnTarget = board[targetRank][targetFile];
+                    if(Piece.getPieceType(pieceOnTarget) == Piece.None) {
+                        availableMove.add(new Move(targetRank, targetFile));
+                    } else break;
+                }
+            }
+        } else {
+            int targetRank = currentRank + possiblePawnDir[doublePushIndex-1][0];
+            int targetFile = currentFile + possiblePawnDir[doublePushIndex-1][1];
+            int pieceOnTarget = board[targetRank][targetFile];
+            if(Piece.getPieceType(pieceOnTarget) == Piece.None) availableMove.add(new Move(targetRank, targetFile));
+        }
+
         return availableMove;
     }
 }
