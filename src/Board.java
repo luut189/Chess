@@ -29,7 +29,7 @@ public class Board extends JPanel {
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     
     String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w";
-    String testFen = "rbqnp3/8/8/8/8/8/8/3PNQBR b";
+    String testFen = "rbqnpk2/8/8/8/8/8/8/2KPNQBR b";
 
     Board(int width, int height) {
         chessBoard = new int[8][8];
@@ -40,9 +40,7 @@ public class Board extends JPanel {
         this.setPreferredSize(new Dimension(width, height));
         this.addMouseListener(new mouseAdapter());
 
-        clearBoard();
-        Piece.decryptFen(startFen, chessBoard);
-        Piece.computePawnStartingPoint(chessBoard);
+        Piece.inputFen(testFen, chessBoard);
         playerToMove = Piece.getPlayerToMove();
         currentTurn = playerToMove == Piece.White ? 1 : 0;
     }
@@ -138,13 +136,20 @@ public class Board extends JPanel {
                             int rank = currentAvailableMove.get(i).rank;
                             int file = currentAvailableMove.get(i).file;
                             if(movedRank == rank && movedFile == file) {
+                                if(Piece.getPieceType(currentPiece) == Piece.P) {
+                                    int pieceColor = Piece.getPieceColor(currentPiece);
+                                    int rankToPromotion = pieceColor == Piece.White ? 0 : 7;
+                                    if(movedRank == rankToPromotion) {
+                                        currentPiece = pieceColor | Piece.Q;
+                                    }
+                                }
                                 chessBoard[movedRank][movedFile] = currentPiece;
                                 chessBoard[selectedRank][selectedFile] = Piece.None;
                                 currentTurn++;
                                 getCurrentTurn();
-                                /* to print out FEN string for every move
-                                System.out.println(Piece.encryptFen(chessBoard, playerToMove));
-                                */
+
+                                // to print out FEN string for every move
+                                //System.out.println(Piece.outputFen(chessBoard, playerToMove));
                                 break;
                             }
                         }

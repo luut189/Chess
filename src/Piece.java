@@ -32,9 +32,7 @@ public class Piece {
     final static int Black = 16;
 
     final static int typeMask = 0b00111;
-    final static int blackMask = 0b10000;
-    final static int whiteMask = 0b01000;
-    final static int colorMask = whiteMask | blackMask;
+    final static int colorMask = 0b11000;
 
     static int[][] numSquaresToEdge = new int[64][8];
 
@@ -47,7 +45,7 @@ public class Piece {
             return new ImageIcon("./Pieces/None.png").getImage();
         } else {
             int pieceType = getPieceType(piece);
-            String pieceColor = (piece & colorMask) == Piece.White ? "W" : "B";
+            String pieceColor = getPieceColor(piece) == Piece.White ? "W" : "B";
             return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
         }
     }
@@ -76,14 +74,7 @@ public class Piece {
         return (rank >= 0 && rank < 8) && (file >= 0 && file < 8);
     }
 
-    public static boolean isOnStartingPoint(int currentRank, int currentFile) {
-        for(int i = 0; i < pawnStartingPoint.size(); i++) {
-            if(currentRank == pawnStartingPoint.get(i).rank && currentFile == pawnStartingPoint.get(i).file) return true;
-        }
-        return false;
-    }
-
-    public static void decryptFen(String fen, int[][] board) {
+    public static void inputFen(String fen, int[][] board) {
         HashMap<Character, Integer> symbolToPiece = new HashMap<>();
         symbolToPiece.put('k', Piece.K);
         symbolToPiece.put('q', Piece.Q);
@@ -117,7 +108,7 @@ public class Piece {
         }
     }
 
-    public static String encryptFen(int[][] board, int playerToMove) {
+    public static String outputFen(int[][] board, int playerToMove) {
         String fen = "";
         HashMap<Integer, Character> pieceToSymbol = new HashMap<>();
         pieceToSymbol.put(Piece.K, 'k');
@@ -152,16 +143,6 @@ public class Piece {
         fen += playerToMove == Piece.White ? "w" : "b";
 
         return fen;
-    }
-
-    public static void computePawnStartingPoint(int[][] board) {
-        for(int rank = 0; rank < 8; rank++) {
-            for(int file = 0; file < 8; file++) {
-                if(getPieceType(board[rank][file]) == Piece.P) {
-                    pawnStartingPoint.add(new Move(rank, file));
-                }
-            }
-        }
     }
 
     public static void computeData() {
