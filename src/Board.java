@@ -18,6 +18,8 @@ public class Board extends JPanel {
      * When getting piece from chessboard, Rank is first and File is second.
      */
 
+    final static int MAX_MOVE = 100;
+
     int width, height, size;
 
     Color whiteColor = new Color(255, 237, 213);
@@ -33,13 +35,17 @@ public class Board extends JPanel {
     static boolean hasCaptured = false;
     static int capturedPiece = Piece.None;
 
+    static int halfmoves;
+    static int tempHalfmoves = 0;
+    static int fullmoves;
+    
     boolean endGame = false;
 
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     ArrayList<Move> allPossibleMove = new ArrayList<>();
     
-    String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w";
-    String testFen = "k7/8/8/8/8/8/8/7K w";
+    String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w 0 1";
+    String testFen = "k7/8/8/8/8/8/8/7K w 0 0";
 
     Random rand = new Random();
 
@@ -131,31 +137,39 @@ public class Board extends JPanel {
     }
 
     public static int makeMove(int currentPiece, int currentRank, int currentFile, Move move) {
-        if(move.isPromotionMove) {
+        fullmoves += Piece.getPieceColor(currentPiece) == Piece.Black ? 1 : 0; 
+        if(move.flag == Flag.PROMOTION) {
             int pieceColor = Piece.getPieceColor(currentPiece);
             currentPiece = pieceColor | Piece.Q;
         }
-        hasCaptured = chessBoard[move.rank][move.file] == Piece.None ? false : true;
-        if(hasCaptured) {
+        hasCaptured = chessBoard[move.rank][move.file] != Piece.None;
+        if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
+            tempHalfmoves = halfmoves;
             capturedPiece = chessBoard[move.rank][move.file];
+            halfmoves = 0;
         }
         chessBoard[move.rank][move.file] = currentPiece;
         chessBoard[currentRank][currentFile] = Piece.None;
+        halfmoves += hasCaptured || Piece.getPieceType(currentPiece) == Piece.P ? 0 : 1;
         currentTurn++;
         getCurrentTurn();
         return playerToMove;
     }
 
     public static int unmakeMove(int currentPiece, int currentRank, int currentFile, Move move) {
-        if(move.isPromotionMove) {
+        fullmoves += Piece.getPieceColor(currentPiece) == Piece.Black ? -1 : 0; 
+        if(move.flag == Flag.PROMOTION) {
             int pieceColor = Piece.getPieceColor(currentPiece);
             currentPiece = pieceColor | Piece.P;
         }
         chessBoard[currentRank][currentFile] = currentPiece;
-        if(hasCaptured) {
+        if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
             chessBoard[move.rank][move.file] = capturedPiece;
+            halfmoves = tempHalfmoves;
+            tempHalfmoves = 0;
         } else {
             chessBoard[move.rank][move.file] = Piece.None;
+            halfmoves--;
         }
         currentTurn--;
         getCurrentTurn();
@@ -177,8 +191,9 @@ public class Board extends JPanel {
                 randFile = rand.nextInt(8);
                 currentAvailableMove = Move.generateMove(chessBoard, chessBoard[randRank][randFile], randRank, randFile, playerToMove);
             }
-            if(allPossibleMove.size() == 0) {
+            if(checkForEndgame()) {
                 getEndgame();
+                repaint();
             } else {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
                 makeMove(chessBoard[randRank][randFile], randRank, randFile, currentAvailableMove.get(randomSelect));
@@ -190,12 +205,19 @@ public class Board extends JPanel {
                 randomMove();
                 repaint();
             }
-        }).start();
+        });
+    }
+
+    public boolean checkForEndgame() {
+        getAllPossibleMove();
+        return halfmoves == MAX_MOVE || allPossibleMove.size() == 0;
     }
 
     public void getEndgame() {
-        System.out.println((playerToMove == Piece.White ? "black" : "white") + " checkmate");
+        System.out.println(halfmoves == MAX_MOVE ? "stalemate" : (playerToMove == Piece.White ? "black" : "white") + " checkmate");
         endGame = true;
+        halfmoves = 0;
+        tempHalfmoves = 0;
         deselectPiece();
     }
 
@@ -224,16 +246,8 @@ public class Board extends JPanel {
                     if(!Piece.isColor(currentPiece, targetPiece)) {
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.rank && movedFile == move.file) {
-                                if(move.isPromotionMove) {
-                                    int pieceColor = Piece.getPieceColor(currentPiece);
-                                    currentPiece = pieceColor | Piece.Q;
-                                }
-                                chessBoard[movedRank][movedFile] = currentPiece;
-                                chessBoard[selectedRank][selectedFile] = Piece.None;
-                                currentTurn++;
-                                getCurrentTurn();
-                                getAllPossibleMove();
-                                if(allPossibleMove.size() == 0) {
+                                playerToMove = makeMove(currentPiece, selectedRank, selectedFile, move);
+                                if(checkForEndgame()) {
                                     getEndgame();
                                     repaint();
                                 } else {

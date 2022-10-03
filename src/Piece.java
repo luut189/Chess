@@ -84,28 +84,28 @@ public class Piece {
         symbolToPiece.put('p', Piece.P);
 
         int file = 0, rank = 0;
+        String splitedFen[] = fen.split(" ");
 
-        for(char symbol : fen.toCharArray()) {
-            if(symbol != ' ') {
-                if(symbol == '/') {
-                    file = 0;
-                    rank++;
+        for(char symbol : splitedFen[0].toCharArray()) {
+            if(symbol == '/') {
+                file = 0;
+                rank++;
+            } else {
+                if(Character.isDigit(symbol)) {
+                    file += Character.getNumericValue(symbol);
                 } else {
-                    if(rank == 7 && file == 8) {
-                        playerToMove = symbol == 'w' ? Piece.White : Piece.Black;
-                    } else {
-                        if(Character.isDigit(symbol)) {
-                            file += Character.getNumericValue(symbol);
-                        } else {
-                            int pieceColor = Character.isUpperCase(symbol) ? Piece.White : Piece.Black;
-                            int pieceType = symbolToPiece.get(Character.toLowerCase(symbol));
-                            board[rank][file] = pieceColor | pieceType;
-                            file++;
-                        }
-                    }
+                    int pieceColor = Character.isUpperCase(symbol) ? Piece.White : Piece.Black;
+                    int pieceType = symbolToPiece.get(Character.toLowerCase(symbol));
+                    board[rank][file] = pieceColor | pieceType;
+                    file++;
                 }
             }
         }
+        
+        playerToMove = splitedFen[1].equals("w") ? Piece.White : Piece.Black;
+
+        Board.halfmoves = Integer.parseInt(splitedFen[2]);
+        Board.fullmoves = Integer.parseInt(splitedFen[3]);
     }
 
     public static String outputFen(int[][] board, int playerToMove) {
@@ -141,6 +141,8 @@ public class Piece {
         }
         fen += " ";
         fen += playerToMove == Piece.White ? "w" : "b";
+
+        fen += " " + Board.halfmoves + " " + Board.fullmoves;
 
         return fen;
     }

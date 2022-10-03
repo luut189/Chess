@@ -4,12 +4,12 @@ public class Move {
 
     int rank;
     int file;
-    boolean isPromotionMove;
+    Flag flag;
 
-    Move(int x, int y, boolean isPromotionMove) {
+    Move(int x, int y, Flag flag) {
         this.rank = x;
         this.file = y;
-        this.isPromotionMove = isPromotionMove;
+        this.flag = flag;
     }
     
     final static int[] possibleSlidingDir = {
@@ -176,7 +176,7 @@ public class Move {
             if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(!Piece.isColor(piece, pieceOnTarget)) {
-                    availableMove.add(new Move(targetRank, targetFile, false));
+                    availableMove.add(new Move(targetRank, targetFile, Flag.NONE));
                 }
             }
         }
@@ -199,7 +199,7 @@ public class Move {
                 int pieceOnTarget = board[targetRank][targetFile];
                 
                 if(Piece.isColor(piece, pieceOnTarget)) break;
-                availableMove.add(new Move(targetRank, targetFile, false));
+                availableMove.add(new Move(targetRank, targetFile, Flag.NONE));
                 if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
                     if(!Piece.isColor(piece, pieceOnTarget)) {
                         break;
@@ -219,7 +219,7 @@ public class Move {
             if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(Piece.isColor(piece, pieceOnTarget)) continue;
-                availableMove.add(new Move(targetRank, targetFile, false));
+                availableMove.add(new Move(targetRank, targetFile, Flag.NONE));
             } else continue;
         }
         return availableMove;
@@ -242,7 +242,7 @@ public class Move {
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
                     if(!Piece.isColor(piece, pieceOnTarget)) {
-                        availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank));
+                        availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
                     } else continue;
                 } else continue;
             }
@@ -254,7 +254,7 @@ public class Move {
                 int targetFile = currentFile + possiblePawnDir[i][1];
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(Piece.getPieceType(pieceOnTarget) == Piece.None) {
-                    availableMove.add(new Move(targetRank, targetFile, false));
+                    availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
                 } else break;
             }
         } else {
@@ -262,7 +262,7 @@ public class Move {
             int targetFile = currentFile + possiblePawnDir[doublePushIndex][1];
             if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
-                if(Piece.getPieceType(pieceOnTarget) == Piece.None) availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank));
+                if(Piece.getPieceType(pieceOnTarget) == Piece.None) availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
             }
         }
 
