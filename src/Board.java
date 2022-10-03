@@ -28,6 +28,9 @@ public class Board extends JPanel {
     int selectedRank = -1, selectedFile = -1;
     int movedRank = -1, movedFile = -1;
     boolean hasSelected = false;
+
+    static int startRank = -1, startFile = -1;
+    static int endRank = -1, endFile = -1;
     
     static int chessBoard[][];
     static int currentTurn, playerToMove;
@@ -39,6 +42,10 @@ public class Board extends JPanel {
     static int tempHalfmoves = 0;
     static int fullmoves;
     
+    boolean isComputer = true;
+    int delay = 100;
+    
+    boolean isPvP = true;
     boolean endGame = false;
 
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
@@ -61,6 +68,22 @@ public class Board extends JPanel {
         Piece.inputFen(startFen, chessBoard);
         playerToMove = Piece.getPlayerToMove();
         currentTurn = playerToMove == Piece.White ? 1 : 0;
+        
+        if(isComputer) {
+            new Timer(delay, new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(checkForEndgame()) {
+                        getEndgame();
+                        repaint();
+                        ((Timer) e.getSource()).stop();
+                    } else {
+                        randomMove();
+                    }
+                    repaint();
+                }
+            }).start();
+        }
     }
 
     public void clearBoard() {
@@ -118,12 +141,34 @@ public class Board extends JPanel {
         }
     }
 
+    public void highlightMove(Graphics g) {
+        for(int rank = 0; rank < 8; rank++) {
+            for(int file = 0; file < 8; file++) {
+                if(rank == startRank && file == startFile) {
+                    g.setColor(new Color(66, 214, 204, 75));
+                    g.fillRect(file*size, rank*size, size, size);
+                } else if(rank == endRank && file == endFile) {
+                    g.setColor(new Color(214, 66, 204, 75));
+                    g.fillRect(file*size, rank*size, size, size);
+                }
+            }
+        }
+    }
+
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         drawBoard(g);
-        drawPieces(g);
         drawSelected(g);
         drawMovable(g);
+        highlightMove(g);
+        drawPieces(g);
+    }
+
+    public void getMoveToHighlight(int currentRank, int currentFile, Move move) {
+        startRank = currentRank;
+        startFile = currentFile;
+        endRank = move.rank;
+        endFile = move.file;
     }
 
     public void deselectPiece() {
@@ -132,6 +177,13 @@ public class Board extends JPanel {
         movedRank = -1;
         selectedRank = -1;
         selectedFile = -1;
+        if(endGame) {
+            startRank = -1;
+            startFile = -1;
+            endRank = -1;
+            endFile = -1;
+        }
+        
         currentAvailableMove = new ArrayList<>();
         repaint();
     }
@@ -143,9 +195,9 @@ public class Board extends JPanel {
             currentPiece = pieceColor | Piece.Q;
         }
         hasCaptured = chessBoard[move.rank][move.file] != Piece.None;
+        capturedPiece = hasCaptured ? chessBoard[move.rank][move.file] : Piece.None;
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
             tempHalfmoves = halfmoves;
-            capturedPiece = chessBoard[move.rank][move.file];
             halfmoves = 0;
         }
         chessBoard[move.rank][move.file] = currentPiece;
@@ -163,12 +215,11 @@ public class Board extends JPanel {
             currentPiece = pieceColor | Piece.P;
         }
         chessBoard[currentRank][currentFile] = currentPiece;
+        chessBoard[move.rank][move.file] = hasCaptured ? capturedPiece : Piece.None;
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
-            chessBoard[move.rank][move.file] = capturedPiece;
             halfmoves = tempHalfmoves;
             tempHalfmoves = 0;
         } else {
-            chessBoard[move.rank][move.file] = Piece.None;
             halfmoves--;
         }
         currentTurn--;
@@ -196,16 +247,12 @@ public class Board extends JPanel {
                 repaint();
             } else {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
-                makeMove(chessBoard[randRank][randFile], randRank, randFile, currentAvailableMove.get(randomSelect));
+                Move move = currentAvailableMove.get(randomSelect);
+                makeMove(chessBoard[randRank][randFile], randRank, randFile, move);
+                currentAvailableMove = new ArrayList<>();
+                getMoveToHighlight(randRank, randFile, move);
             }
         }
-        new Timer(100, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                randomMove();
-                repaint();
-            }
-        });
     }
 
     public boolean checkForEndgame() {
@@ -246,12 +293,13 @@ public class Board extends JPanel {
                     if(!Piece.isColor(currentPiece, targetPiece)) {
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.rank && movedFile == move.file) {
-                                playerToMove = makeMove(currentPiece, selectedRank, selectedFile, move);
+                                makeMove(currentPiece, selectedRank, selectedFile, move);  
+                                getMoveToHighlight(selectedRank, selectedFile, move);
                                 if(checkForEndgame()) {
                                     getEndgame();
                                     repaint();
                                 } else {
-                                    randomMove();
+                                    if(!isPvP) randomMove();
                                 }
                                 // to print out FEN string for every move
                                 //System.out.println(Piece.outputFen(chessBoard, playerToMove));
