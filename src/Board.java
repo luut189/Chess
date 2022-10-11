@@ -38,12 +38,16 @@ public class Board extends JPanel {
     static boolean hasCaptured = false;
     static int capturedPiece = Piece.None;
 
+    static boolean hasEnPassant = false;
+    static int enPassantRank = -1;
+    static int enPassantFile = -1;
+
     static int halfmoves;
     static int tempHalfmoves = 0;
     static int fullmoves;
     
     boolean isComputer = true;
-    int delay = 100;
+    int delay = 0;
     
     boolean isPvP = true;
     boolean endGame = false;
@@ -51,8 +55,8 @@ public class Board extends JPanel {
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     ArrayList<Move> allPossibleMove = new ArrayList<>();
     
-    String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w 0 1";
-    String testFen = "k7/8/8/8/8/8/8/7K w 0 0";
+    String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - 0 1";
+    String testFen = "8/7k/1N6/pP6/8/8/8/8 w a3 0 1";
 
     Random rand = new Random();
 
@@ -142,6 +146,12 @@ public class Board extends JPanel {
     }
 
     public void highlightMove(Graphics g) {
+        if(hasSelected) {
+            startRank = -1;
+            startFile = -1;
+            endRank = -1;
+            endFile = -1;
+        }
         for(int rank = 0; rank < 8; rank++) {
             for(int file = 0; file < 8; file++) {
                 if(rank == startRank && file == startFile) {
@@ -189,19 +199,28 @@ public class Board extends JPanel {
     }
 
     public static int makeMove(int currentPiece, int currentRank, int currentFile, Move move) {
-        fullmoves += Piece.getPieceColor(currentPiece) == Piece.Black ? 1 : 0; 
+        int pieceColor = Piece.getPieceColor(currentPiece);
+        fullmoves += pieceColor == Piece.Black ? 1 : 0; 
         if(move.flag == Flag.PROMOTION) {
-            int pieceColor = Piece.getPieceColor(currentPiece);
             currentPiece = pieceColor | Piece.Q;
         }
-        hasCaptured = chessBoard[move.rank][move.file] != Piece.None;
-        capturedPiece = hasCaptured ? chessBoard[move.rank][move.file] : Piece.None;
+        if(move.flag == Flag.EN_PASSANT) {
+            int enPassantOffset = pieceColor == Piece.White ? 1 : -1;
+            hasCaptured = chessBoard[move.rank+enPassantOffset][move.file] != Piece.None;
+            capturedPiece = hasCaptured ? chessBoard[move.rank+enPassantOffset][move.file] : Piece.None;
+            chessBoard[move.rank][move.file] = currentPiece;
+            chessBoard[move.rank+enPassantOffset][move.file] = Piece.None;
+            chessBoard[currentRank][currentFile] = Piece.None;
+        } else {
+            hasCaptured = chessBoard[move.rank][move.file] != Piece.None;
+            capturedPiece = hasCaptured ? chessBoard[move.rank][move.file] : Piece.None;
+            chessBoard[move.rank][move.file] = currentPiece;
+            chessBoard[currentRank][currentFile] = Piece.None;
+        }
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
             tempHalfmoves = halfmoves;
             halfmoves = 0;
         }
-        chessBoard[move.rank][move.file] = currentPiece;
-        chessBoard[currentRank][currentFile] = Piece.None;
         halfmoves += hasCaptured || Piece.getPieceType(currentPiece) == Piece.P ? 0 : 1;
         currentTurn++;
         getCurrentTurn();
@@ -209,13 +228,20 @@ public class Board extends JPanel {
     }
 
     public static int unmakeMove(int currentPiece, int currentRank, int currentFile, Move move) {
-        fullmoves += Piece.getPieceColor(currentPiece) == Piece.Black ? -1 : 0; 
+        int pieceColor = Piece.getPieceColor(currentPiece);
+        fullmoves += pieceColor == Piece.Black ? -1 : 0; 
         if(move.flag == Flag.PROMOTION) {
-            int pieceColor = Piece.getPieceColor(currentPiece);
             currentPiece = pieceColor | Piece.P;
         }
-        chessBoard[currentRank][currentFile] = currentPiece;
-        chessBoard[move.rank][move.file] = hasCaptured ? capturedPiece : Piece.None;
+        if(move.flag == Flag.EN_PASSANT) {
+            int enPassantOffset = pieceColor == Piece.White ? 1 : -1;
+            chessBoard[move.rank+enPassantOffset][move.file] = hasCaptured ? capturedPiece : Piece.None;
+            chessBoard[currentRank][currentFile] = currentPiece;
+            chessBoard[move.rank][move.file] = Piece.None;
+        } else {
+            chessBoard[currentRank][currentFile] = currentPiece;
+            chessBoard[move.rank][move.file] = hasCaptured ? capturedPiece : Piece.None;
+        }
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
             halfmoves = tempHalfmoves;
             tempHalfmoves = 0;
@@ -225,6 +251,16 @@ public class Board extends JPanel {
         currentTurn--;
         getCurrentTurn();
         return playerToMove;
+    }
+
+    public static void getEnPassantLocation(int currentPiece, Move move) {
+        if(hasEnPassant) {
+            enPassantRank = move.rank + (Piece.getPieceColor(currentPiece) == Piece.Black ? -1 : 1);
+            enPassantFile = move.file;
+        } else {
+            enPassantRank = -1;
+            enPassantFile = -1;
+        }
     }
 
     public void randomMove() {
@@ -249,6 +285,8 @@ public class Board extends JPanel {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
                 Move move = currentAvailableMove.get(randomSelect);
                 makeMove(chessBoard[randRank][randFile], randRank, randFile, move);
+                hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
+                getEnPassantLocation(chessBoard[randRank][randFile], move);
                 currentAvailableMove = new ArrayList<>();
                 getMoveToHighlight(randRank, randFile, move);
             }
@@ -293,7 +331,9 @@ public class Board extends JPanel {
                     if(!Piece.isColor(currentPiece, targetPiece)) {
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.rank && movedFile == move.file) {
-                                makeMove(currentPiece, selectedRank, selectedFile, move);  
+                                makeMove(currentPiece, selectedRank, selectedFile, move);
+                                hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
+                                getEnPassantLocation(currentPiece, move);
                                 getMoveToHighlight(selectedRank, selectedFile, move);
                                 if(checkForEndgame()) {
                                     getEndgame();

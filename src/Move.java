@@ -240,11 +240,17 @@ public class Move {
             int targetFile = currentFile + possiblePawnDir[i][1];
             if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
-                if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
-                    if(!Piece.isColor(piece, pieceOnTarget)) {
-                        availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
+                if(Board.hasEnPassant) {
+                    if(targetRank == Board.enPassantRank && targetFile == Board.enPassantFile) {
+                        availableMove.add(new Move(targetRank, targetFile, Flag.EN_PASSANT));
                     } else continue;
-                } else continue;
+                } else {
+                    if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
+                        if(!Piece.isColor(piece, pieceOnTarget)) {
+                            availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
+                        } else continue;
+                    } else continue;
+                }
             }
         }
 
@@ -254,7 +260,7 @@ public class Move {
                 int targetFile = currentFile + possiblePawnDir[i][1];
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(Piece.getPieceType(pieceOnTarget) == Piece.None) {
-                    availableMove.add(new Move(targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
+                    availableMove.add(new Move(targetRank, targetFile, (i == 3 || i == 7) ? Flag.DOUBLE_PUSH : Flag.NONE));
                 } else break;
             }
         } else {

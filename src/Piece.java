@@ -104,8 +104,14 @@ public class Piece {
         
         playerToMove = splitedFen[1].equals("w") ? Piece.White : Piece.Black;
 
-        Board.halfmoves = Integer.parseInt(splitedFen[2]);
-        Board.fullmoves = Integer.parseInt(splitedFen[3]);
+        if(!splitedFen[2].equals("-")) {
+            Board.hasEnPassant = true;
+            Board.enPassantRank = Integer.parseInt(String.valueOf(splitedFen[2].charAt(1))) - 1;
+            Board.enPassantFile = (int) splitedFen[2].charAt(0) - 97;
+        }
+
+        Board.halfmoves = Integer.parseInt(splitedFen[3]);
+        Board.fullmoves = Integer.parseInt(splitedFen[4]);
     }
 
     public static String outputFen(int[][] board, int playerToMove) {
@@ -141,6 +147,13 @@ public class Piece {
         }
         fen += " ";
         fen += playerToMove == Piece.White ? "w" : "b";
+
+        fen += " ";
+        if(Board.hasEnPassant) {
+            fen += Character.toString((char) Board.enPassantFile+97) + String.valueOf(Board.enPassantRank+1);
+        } else {
+            fen += "-";
+        }
 
         fen += " " + Board.halfmoves + " " + Board.fullmoves;
 
