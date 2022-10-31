@@ -26,7 +26,7 @@ public class Piece {
     final static int N = 5;
     final static int P = 6;
     
-    private final static String[] pieceTypes = {"-", "K", "Q", "R", "B", "N", "P"};
+    public final static String[] pieceTypes = {"-", "K", "Q", "R", "B", "N", "P"};
 
     final static int White = 8;
     final static int Black = 16;
@@ -42,11 +42,11 @@ public class Piece {
 
     public static Image getPiece(int piece) {
         if(piece == 0) {
-            return new ImageIcon("./Pieces/None.png").getImage();
+            return new ImageIcon("src/Pieces/None.png").getImage();
         } else {
             int pieceType = getPieceType(piece);
             String pieceColor = getPieceColor(piece) == Piece.White ? "W" : "B";
-            return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
+            return new ImageIcon("src/Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
         }
     }
 

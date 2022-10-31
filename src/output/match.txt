@@ -1,0 +1,4770 @@
+r n b q k b n r 
+p p p p p p p p 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+P P P P P P P P 
+R N B Q K B N R 
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - 0 1
+
+r n b q k b n r 
+p p p p p p p p 
+- - - - - - - - 
+- - - - - - - - 
+- - - - P - - - 
+- - - - - - - - 
+P P P P - P P P 
+R N B Q K B N R 
+rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b e6 0 1
+
+r n b q k b n r 
+p p - p p p p p 
+- - - - - - - - 
+- - p - - - - - 
+- - - - P - - - 
+- - - - - - - - 
+P P P P - P P P 
+R N B Q K B N R 
+rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w c5 0 2
+
+r n b q k b n r 
+p p - p p p p p 
+- - - - - - - - 
+- - p - - - - - 
+- - - - P - - - 
+- - P - - - - - 
+P P - P - P P P 
+R N B Q K B N R 
+rnbqkbnr/pp1ppppp/8/2p5/4P3/2P5/PP1P1PPP/RNBQKBNR b - 0 2
+
+r n b q k b n r 
+p p - p p p p p 
+- - - - - - - - 
+- - - - - - - - 
+- - p - P - - - 
+- - P - - - - - 
+P P - P - P P P 
+R N B Q K B N R 
+rnbqkbnr/pp1ppppp/8/8/2p1P3/2P5/PP1P1PPP/RNBQKBNR w - 0 3
+
+r n b q k b n r 
+p p - p p p p p 
+- - - - - - - - 
+- - - - - - - - 
+- - p - P - - - 
+P - P - - - - - 
+- P - P - P P P 
+R N B Q K B N R 
+rnbqkbnr/pp1ppppp/8/8/2p1P3/P1P5/1P1P1PPP/RNBQKBNR b - 0 3
+
+r n b q k b - r 
+p p - p p p p p 
+- - - - - - - n 
+- - - - - - - - 
+- - p - P - - - 
+P - P - - - - - 
+- P - P - P P P 
+R N B Q K B N R 
+rnbqkb1r/pp1ppppp/7n/8/2p1P3/P1P5/1P1P1PPP/RNBQKBNR w - 1 4
+
+r n b q k b - r 
+p p - p p p p p 
+- - - - - - - n 
+- - - - - - - - 
+- - p - P - - - 
+P - P - - - - P 
+- P - P - P P - 
+R N B Q K B N R 
+rnbqkb1r/pp1ppppp/7n/8/2p1P3/P1P4P/1P1P1PP1/RNBQKBNR b - 0 4
+
+r n b q k b - r 
+p p - p p p - p 
+- - - - - - p n 
+- - - - - - - - 
+- - p - P - - - 
+P - P - - - - P 
+- P - P - P P - 
+R N B Q K B N R 
+rnbqkb1r/pp1ppp1p/6pn/8/2p1P3/P1P4P/1P1P1PP1/RNBQKBNR w - 0 5
+
+r n b q k b - r 
+p p - p p p - p 
+- - - - - - p n 
+- - - - - - - - 
+- - p - P - - P 
+P - P - - - - - 
+- P - P - P P - 
+R N B Q K B N R 
+rnbqkb1r/pp1ppp1p/6pn/8/2p1P2P/P1P5/1P1P1PP1/RNBQKBNR b - 0 5
+
+r n b q k - - r 
+p p - p p p b p 
+- - - - - - p n 
+- - - - - - - - 
+- - p - P - - P 
+P - P - - - - - 
+- P - P - P P - 
+R N B Q K B N R 
+rnbqk2r/pp1pppbp/6pn/8/2p1P2P/P1P5/1P1P1PP1/RNBQKBNR w - 1 6
+
+r n b q k - - r 
+p p - p p p b p 
+- - - - - - p n 
+- - - - P - - - 
+- - p - - - - P 
+P - P - - - - - 
+- P - P - P P - 
+R N B Q K B N R 
+rnbqk2r/pp1pppbp/6pn/4P3/2p4P/P1P5/1P1P1PP1/RNBQKBNR b - 0 6
+
+r n b q k - r - 
+p p - p p p b p 
+- - - - - - p n 
+- - - - P - - - 
+- - p - - - - P 
+P - P - - - - - 
+- P - P - P P - 
+R N B Q K B N R 
+rnbqk1r1/pp1pppbp/6pn/4P3/2p4P/P1P5/1P1P1PP1/RNBQKBNR w - 1 7
+
+r n b q k - r - 
+p p - p p p b p 
+- - - - - - p n 
+- - - - P - - - 
+- - p - - P - P 
+P - P - - - - - 
+- P - P - - P - 
+R N B Q K B N R 
+rnbqk1r1/pp1pppbp/6pn/4P3/2p2P1P/P1P5/1P1P2P1/RNBQKBNR b f6 0 7
+
+r n b q k - r - 
+p p - - p p b p 
+- - - - - - p n 
+- - - p P - - - 
+- - p - - P - P 
+P - P - - - - - 
+- P - P - - P - 
+R N B Q K B N R 
+rnbqk1r1/pp2ppbp/6pn/3pP3/2p2P1P/P1P5/1P1P2P1/RNBQKBNR w d5 0 8
+
+r n b q k - r - 
+p p - - p p b p 
+- - - - - - p n 
+- - - p P - - - 
+- - p P - P - P 
+P - P - - - - - 
+- P - - - - P - 
+R N B Q K B N R 
+rnbqk1r1/pp2ppbp/6pn/3pP3/2pP1P1P/P1P5/1P4P1/RNBQKBNR b d6 0 8
+
+r n b q k - r - 
+p p - - p p b p 
+- - - - - - - n 
+- - - p P - p - 
+- - p P - P - P 
+P - P - - - - - 
+- P - - - - P - 
+R N B Q K B N R 
+rnbqk1r1/pp2ppbp/7n/3pP1p1/2pP1P1P/P1P5/1P4P1/RNBQKBNR w - 0 9
+
+r n b q k - r - 
+p p - - p p b p 
+- - - - - - - n 
+- - - p P - p - 
+- - p P - P - P 
+P - P B - - - - 
+- P - - - - P - 
+R N B Q K - N R 
+rnbqk1r1/pp2ppbp/7n/3pP1p1/2pP1P1P/P1PB4/1P4P1/RNBQK1NR b - 1 9
+
+r - b q k - r - 
+p p - n p p b p 
+- - - - - - - n 
+- - - p P - p - 
+- - p P - P - P 
+P - P B - - - - 
+- P - - - - P - 
+R N B Q K - N R 
+r1bqk1r1/pp1nppbp/7n/3pP1p1/2pP1P1P/P1PB4/1P4P1/RNBQK1NR w - 2 10
+
+r - b q k - r - 
+p p - n p p b p 
+- - - - - - - n 
+- - - p P - P - 
+- - p P - - - P 
+P - P B - - - - 
+- P - - - - P - 
+R N B Q K - N R 
+r1bqk1r1/pp1nppbp/7n/3pP1P1/2pP3P/P1PB4/1P4P1/RNBQK1NR b - 0 10
+
+r - b q k - r - 
+- p - n p p b p 
+- - - - - - - n 
+p - - p P - P - 
+- - p P - - - P 
+P - P B - - - - 
+- P - - - - P - 
+R N B Q K - N R 
+r1bqk1r1/1p1nppbp/7n/p2pP1P1/2pP3P/P1PB4/1P4P1/RNBQK1NR w a5 0 11
+
+r - b q k - r - 
+- p - n p p b p 
+- - - - - - - n 
+p - - p P - P - 
+- - p P - - - P 
+P - P B - - - - 
+- P - - - K P - 
+R N B Q - - N R 
+r1bqk1r1/1p1nppbp/7n/p2pP1P1/2pP3P/P1PB4/1P3KP1/RNBQ2NR b - 1 11
+
+r - b q - k r - 
+- p - n p p b p 
+- - - - - - - n 
+p - - p P - P - 
+- - p P - - - P 
+P - P B - - - - 
+- P - - - K P - 
+R N B Q - - N R 
+r1bq1kr1/1p1nppbp/7n/p2pP1P1/2pP3P/P1PB4/1P3KP1/RNBQ2NR w - 2 12
+
+r - b q - k r - 
+- p - n p p b p 
+- - - - - - - n 
+p - - p P - P - 
+- - p P - - - P 
+P - P B - - - - 
+- P - - - K P R 
+R N B Q - - N - 
+r1bq1kr1/1p1nppbp/7n/p2pP1P1/2pP3P/P1PB4/1P3KPR/RNBQ2N b - 3 12
+
+r - b q - k r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - P - 
+- - p P - - - P 
+P - P B - - - - 
+- P - - - K P R 
+R N B Q - - N - 
+r1bq1kr1/1p1n1pbp/4p2n/p2pP1P1/2pP3P/P1PB4/1P3KPR/RNBQ2N w - 0 13
+
+r - b q - k r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - P P 
+- - p P - - - - 
+P - P B - - - - 
+- P - - - K P R 
+R N B Q - - N - 
+r1bq1kr1/1p1n1pbp/4p2n/p2pP1PP/2pP4/P1PB4/1P3KPR/RNBQ2N b - 0 13
+
+r - b q k - r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - P P 
+- - p P - - - - 
+P - P B - - - - 
+- P - - - K P R 
+R N B Q - - N - 
+r1bqk1r1/1p1n1pbp/4p2n/p2pP1PP/2pP4/P1PB4/1P3KPR/RNBQ2N w - 1 14
+
+r - b q k - r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - P P 
+- - p P - B - - 
+P - P B - - - - 
+- P - - - K P R 
+R N - Q - - N - 
+r1bqk1r1/1p1n1pbp/4p2n/p2pP1PP/2pP1B2/P1PB4/1P3KPR/RN1Q2N b - 2 14
+
+r - b q k - r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - P P 
+- - - P - B - - 
+P - P p - - - - 
+- P - - - K P R 
+R N - Q - - N - 
+r1bqk1r1/1p1n1pbp/4p2n/p2pP1PP/3P1B2/P1Pp4/1P3KPR/RN1Q2N w - 0 15
+
+r - b q k - r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - P P 
+- P - P - B - - 
+P - P p - - - - 
+- - - - - K P R 
+R N - Q - - N - 
+r1bqk1r1/1p1n1pbp/4p2n/p2pP1PP/1P1P1B2/P1Pp4/5KPR/RN1Q2N b b6 0 15
+
+r - b - k - r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - q P 
+- P - P - B - - 
+P - P p - - - - 
+- - - - - K P R 
+R N - Q - - N - 
+r1b1k1r1/1p1n1pbp/4p2n/p2pP1qP/1P1P1B2/P1Pp4/5KPR/RN1Q2N w - 0 16
+
+r - b - k - r - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - q P 
+P P - P - B - - 
+- - P p - - - - 
+- - - - - K P R 
+R N - Q - - N - 
+r1b1k1r1/1p1n1pbp/4p2n/p2pP1qP/PP1P1B2/2Pp4/5KPR/RN1Q2N b - 0 16
+
+r - b - k r - - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - q P 
+P P - P - B - - 
+- - P p - - - - 
+- - - - - K P R 
+R N - Q - - N - 
+r1b1kr2/1p1n1pbp/4p2n/p2pP1qP/PP1P1B2/2Pp4/5KPR/RN1Q2N w - 1 17
+
+r - b - k r - - 
+- p - n - p b p 
+- - - - p - - n 
+p - - p P - q P 
+P P - P - B - - 
+- - P p - Q - - 
+- - - - - K P R 
+R N - - - - N - 
+r1b1kr2/1p1n1pbp/4p2n/p2pP1qP/PP1P1B2/2Pp1Q2/5KPR/RN4N b - 2 17
+
+r - b - k r - - 
+- - - n - p b p 
+- p - - p - - n 
+p - - p P - q P 
+P P - P - B - - 
+- - P p - Q - - 
+- - - - - K P R 
+R N - - - - N - 
+r1b1kr2/3n1pbp/1p2p2n/p2pP1qP/PP1P1B2/2Pp1Q2/5KPR/RN4N w - 0 18
+
+r - b - k r - - 
+- - - n - p b p 
+- p - - p - - n 
+p - - p P - q P 
+P P - P - B - - 
+- - P p - Q P - 
+- - - - - K - R 
+R N - - - - N - 
+r1b1kr2/3n1pbp/1p2p2n/p2pP1qP/PP1P1B2/2Pp1QP1/5K1R/RN4N b - 0 18
+
+- - b - k r - - 
+- - - n - p b p 
+r p - - p - - n 
+p - - p P - q P 
+P P - P - B - - 
+- - P p - Q P - 
+- - - - - K - R 
+R N - - - - N - 
+2b1kr2/3n1pbp/rp2p2n/p2pP1qP/PP1P1B2/2Pp1QP1/5K1R/RN4N w - 1 19
+
+- - b - k r - - 
+- - - n - p b p 
+r p - - p - - n 
+p - - p P - q P 
+P P P P - B - - 
+- - - p - Q P - 
+- - - - - K - R 
+R N - - - - N - 
+2b1kr2/3n1pbp/rp2p2n/p2pP1qP/PPPP1B2/3p1QP1/5K1R/RN4N b - 0 19
+
+- - b - k r - - 
+- - - n - p b p 
+r p - - p - - n 
+p - - - P - q P 
+P P p P - B - - 
+- - - p - Q P - 
+- - - - - K - R 
+R N - - - - N - 
+2b1kr2/3n1pbp/rp2p2n/p3P1qP/PPpP1B2/3p1QP1/5K1R/RN4N w - 0 20
+
+- - b - k r - - 
+- - - n - p b p 
+r p - - p - - n 
+p - - - P - q P 
+P P p P - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b1kr2/3n1pbp/rp2p2n/p3P1qP/PPpP1B2/R2p1QP1/5K1R/1N4N b - 1 20
+
+- - b - k - - r 
+- - - n - p b p 
+r p - - p - - n 
+p - - - P - q P 
+P P p P - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b1k2r/3n1pbp/rp2p2n/p3P1qP/PPpP1B2/R2p1QP1/5K1R/1N4N w - 2 21
+
+- - b - k - - r 
+- - - n - p b p 
+r p - - p - - n 
+p - - P P - q P 
+P P p - - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b1k2r/3n1pbp/rp2p2n/p2PP1qP/PPp2B2/R2p1QP1/5K1R/1N4N b - 0 21
+
+- - b - k - - r 
+- - - n - p b p 
+r p - - p - - n 
+p - - P P - - q 
+P P p - - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b1k2r/3n1pbp/rp2p2n/p2PP2q/PPp2B2/R2p1QP1/5K1R/1N4N w - 0 22
+
+- - b - k - - r 
+- - - n - p b p 
+r p - - p - - n 
+p P - P P - - q 
+P - p - - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b1k2r/3n1pbp/rp2p2n/pP1PP2q/P1p2B2/R2p1QP1/5K1R/1N4N b - 0 22
+
+- - b - k - - r 
+- - - - - p b p 
+r p - - p - - n 
+p P n P P - - q 
+P - p - - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b1k2r/5pbp/rp2p2n/pPnPP2q/P1p2B2/R2p1QP1/5K1R/1N4N w - 1 23
+
+- - b - k - - r 
+- - - - - p b p 
+r p - - p - - n 
+p P n P P - - q 
+P - p - - B - - 
+- - - p - Q P - 
+R - - - - K - R 
+- N - - - - N - 
+2b1k2r/5pbp/rp2p2n/pPnPP2q/P1p2B2/3p1QP1/R4K1R/1N4N b - 2 23
+
+- - b - - - - r 
+- - - k - p b p 
+r p - - p - - n 
+p P n P P - - q 
+P - p - - B - - 
+- - - p - Q P - 
+R - - - - K - R 
+- N - - - - N - 
+2b4r/3k1pbp/rp2p2n/pPnPP2q/P1p2B2/3p1QP1/R4K1R/1N4N w - 3 24
+
+- - b - - - - r 
+- - - k - p b p 
+r p - - p - - n 
+p P n P P - - q 
+P - p - - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b4r/3k1pbp/rp2p2n/pPnPP2q/P1p2B2/R2p1QP1/5K1R/1N4N b - 4 24
+
+- - b - - - - r 
+r - - k - p b p 
+- p - - p - - n 
+p P n P P - - q 
+P - p - - B - - 
+R - - p - Q P - 
+- - - - - K - R 
+- N - - - - N - 
+2b4r/r2k1pbp/1p2p2n/pPnPP2q/P1p2B2/R2p1QP1/5K1R/1N4N w - 5 25
+
+- - b - - - - r 
+r - - k - p b p 
+- p - - p - - n 
+p P n P P - - q 
+P - p - - B - - 
+R - - p - Q P - 
+- - - - N K - R 
+- N - - - - - - 
+2b4r/r2k1pbp/1p2p2n/pPnPP2q/P1p2B2/R2p1QP1/4NK1R/1N b - 6 25
+
+- - b - - - - r 
+r - - k - - b p 
+- p - - p - - n 
+p P n P P p - q 
+P - p - - B - - 
+R - - p - Q P - 
+- - - - N K - R 
+- N - - - - - - 
+2b4r/r2k2bp/1p2p2n/pPnPPp1q/P1p2B2/R2p1QP1/4NK1R/1N w f5 0 26
+
+- - b - - - - r 
+r - - k - - b p 
+- p - - p - - n 
+p P n P P p - q 
+P - p - - - - - 
+R - - p - Q P - 
+- - - - N - K R 
+- N - - - - - - 
+2b4r/r2k2bp/1p2p2n/pPnPPp1q/P1p5/R2p1QP1/4N1KR/1N b - 1 26
+
+- - b - - - - r 
+r - - k - - - p 
+- p - - p - - n 
+p P n P b p - q 
+P - p - - - - - 
+R - - p - Q P - 
+- - - - N - K R 
+- N - - - - - - 
+2b4r/r2k3p/1p2p2n/pPnPbp1q/P1p5/R2p1QP1/4N1KR/1N w - 0 27
+
+- - b - - - - r 
+r - - k - - - p 
+- p - - p - - n 
+p P n P b p - q 
+P - p - - - - - 
+R - - p - Q P - 
+- - - - - - K R 
+- N - - - - N - 
+2b4r/r2k3p/1p2p2n/pPnPbp1q/P1p5/R2p1QP1/6KR/1N4N b - 1 27
+
+- - b - - - - r 
+r - - k - - - p 
+- p - - p - - n 
+p P n P b - - q 
+P - p - - p - - 
+R - - p - Q P - 
+- - - - - - K R 
+- N - - - - N - 
+2b4r/r2k3p/1p2p2n/pPnPb2q/P1p2p2/R2p1QP1/6KR/1N4N w - 0 28
+
+- - b - - - - r 
+r - - k - - - p 
+- p - - p - - n 
+p P n P b - - q 
+P - p - - p - - 
+R - - p - Q P - 
+- - - - - - - R 
+- N - - - K N - 
+2b4r/r2k3p/1p2p2n/pPnPb2q/P1p2p2/R2p1QP1/7R/1N3KN b - 1 28
+
+- - b - - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - q 
+P - p - - p - - 
+R - - p - Q P - 
+- - - - - - - R 
+- N - - - K N - 
+2b4r/r2k3p/1p1bp2n/pPnP3q/P1p2p2/R2p1QP1/7R/1N3KN w - 2 29
+
+- - b - - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - q 
+P - p - - p P - 
+R - - p - Q - - 
+- - - - - - - R 
+- N - - - K N - 
+2b4r/r2k3p/1p1bp2n/pPnP3q/P1p2pP1/R2p1Q2/7R/1N3KN b - 0 29
+
+- - b - - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - q 
+P - p - - p P - 
+R - - - - Q - - 
+- - - p - - - R 
+- N - - - K N - 
+2b4r/r2k3p/1p1bp2n/pPnP3q/P1p2pP1/R4Q2/3p3R/1N3KN w - 0 30
+
+- - b - - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - q 
+P - p - - p P - 
+R - - - - Q - - 
+- - - p N - - R 
+- N - - - K - - 
+2b4r/r2k3p/1p1bp2n/pPnP3q/P1p2pP1/R4Q2/3pN2R/1N3K b - 1 30
+
+- - b - - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - q - 
+P - p - - p P - 
+R - - - - Q - - 
+- - - p N - - R 
+- N - - - K - - 
+2b4r/r2k3p/1p1bp2n/pPnP2q1/P1p2pP1/R4Q2/3pN2R/1N3K w - 1 31
+
+- - b - - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - q - 
+P - p - - p P - 
+- - - - - Q - - 
+- - - p N - - R 
+R N - - - K - - 
+2b4r/r2k3p/1p1bp2n/pPnP2q1/P1p2pP1/5Q2/3pN2R/RN3K b - 2 31
+
+- - b q - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - - 
+P - p - - p P - 
+- - - - - Q - - 
+- - - p N - - R 
+R N - - - K - - 
+2bq3r/r2k3p/1p1bp2n/pPnP4/P1p2pP1/5Q2/3pN2R/RN3K w - 1 32
+
+- - b q - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - - 
+P - p - - p P - 
+- - - - - Q N - 
+- - - p - - - R 
+R N - - - K - - 
+2bq3r/r2k3p/1p1bp2n/pPnP4/P1p2pP1/5QN1/3p3R/RN3K b - 2 32
+
+- - b q - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - - 
+P - p - - - P - 
+- - - - - Q p - 
+- - - p - - - R 
+R N - - - K - - 
+2bq3r/r2k3p/1p1bp2n/pPnP4/P1p3P1/5Qp1/3p3R/RN3K w - 0 33
+
+- - b q - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - - 
+P - p - - - P - 
+- - - - - Q p R 
+- - - p - - - - 
+R N - - - K - - 
+2bq3r/r2k3p/1p1bp2n/pPnP4/P1p3P1/5QpR/3p4/RN3K b - 1 33
+
+- - b q - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - - 
+P - - - - - P - 
+- - p - - Q p R 
+- - - p - - - - 
+R N - - - K - - 
+2bq3r/r2k3p/1p1bp2n/pPnP4/P5P1/2p2QpR/3p4/RN3K w - 0 34
+
+- - b q - - - r 
+r - - k - - - p 
+- p - b p - - n 
+p P n P - - - - 
+P - - - - - P - 
+- - N - - Q p R 
+- - - p - - - - 
+R - - - - K - - 
+2bq3r/r2k3p/1p1bp2n/pPnP4/P5P1/2N2QpR/3p4/R4K b - 0 34
+
+- b b q - - - r 
+r - - k - - - p 
+- p - - p - - n 
+p P n P - - - - 
+P - - - - - P - 
+- - N - - Q p R 
+- - - p - - - - 
+R - - - - K - - 
+1bbq3r/r2k3p/1p2p2n/pPnP4/P5P1/2N2QpR/3p4/R4K w - 1 35
+
+- b b q - - - r 
+r - - k - - - p 
+- p - - p - - n 
+p P n P - - - - 
+P - - - - - P - 
+- - N - - Q p R 
+- - - p - - - - 
+- - - R - K - - 
+1bbq3r/r2k3p/1p2p2n/pPnP4/P5P1/2N2QpR/3p4/3R1K b - 2 35
+
+- b b q r - - - 
+r - - k - - - p 
+- p - - p - - n 
+p P n P - - - - 
+P - - - - - P - 
+- - N - - Q p R 
+- - - p - - - - 
+- - - R - K - - 
+1bbqr3/r2k3p/1p2p2n/pPnP4/P5P1/2N2QpR/3p4/3R1K w - 3 36
+
+- b b q r - - - 
+r - - k - - - p 
+- p - - p - - R 
+p P n P - - - - 
+P - - - - - P - 
+- - N - - Q p - 
+- - - p - - - - 
+- - - R - K - - 
+1bbqr3/r2k3p/1p2p2R/pPnP4/P5P1/2N2Qp1/3p4/3R1K b - 0 36
+
+- b b q - - r - 
+r - - k - - - p 
+- p - - p - - R 
+p P n P - - - - 
+P - - - - - P - 
+- - N - - Q p - 
+- - - p - - - - 
+- - - R - K - - 
+1bbq2r1/r2k3p/1p2p2R/pPnP4/P5P1/2N2Qp1/3p4/3R1K w - 1 37
+
+- b b q - - r - 
+r - - k - - - p 
+- p - - p - - R 
+p P n P - - - - 
+P - - - - - P - 
+- - - - - Q p - 
+- - - p N - - - 
+- - - R - K - - 
+1bbq2r1/r2k3p/1p2p2R/pPnP4/P5P1/5Qp1/3pN3/3R1K b - 2 37
+
+- b b q - - r - 
+r n - k - - - p 
+- p - - p - - R 
+p P - P - - - - 
+P - - - - - P - 
+- - - - - Q p - 
+- - - p N - - - 
+- - - R - K - - 
+1bbq2r1/rn1k3p/1p2p2R/pP1P4/P5P1/5Qp1/3pN3/3R1K w - 3 38
+
+- b b q - - r - 
+r n - k - - - p 
+- p - - p - R - 
+p P - P - - - - 
+P - - - - - P - 
+- - - - - Q p - 
+- - - p N - - - 
+- - - R - K - - 
+1bbq2r1/rn1k3p/1p2p1R1/pP1P4/P5P1/5Qp1/3pN3/3R1K b - 4 38
+
+- b b q - - r - 
+r - - k - - - p 
+- p - - p - R - 
+p P n P - - - - 
+P - - - - - P - 
+- - - - - Q p - 
+- - - p N - - - 
+- - - R - K - - 
+1bbq2r1/r2k3p/1p2p1R1/pPnP4/P5P1/5Qp1/3pN3/3R1K w - 5 39
+
+- b b q - - r - 
+r - - k - - - p 
+- p - - p - - - 
+p P n P - - R - 
+P - - - - - P - 
+- - - - - Q p - 
+- - - p N - - - 
+- - - R - K - - 
+1bbq2r1/r2k3p/1p2p3/pPnP2R1/P5P1/5Qp1/3pN3/3R1K b - 6 39
+
+- b b q - - r - 
+r - - k - - - p 
+- p - - p - - - 
+p P n P - - R - 
+P - - - - - P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - K - - 
+1bbq2r1/r2k3p/1p2p3/pPnP2R1/P5P1/5Q2/3pN1p1/3R1K w - 0 40
+
+- b b q - - r - 
+r - - k - - - p 
+- p - - p - - - 
+p P n P - - R - 
+P - - - - - P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - - K - 
+1bbq2r1/r2k3p/1p2p3/pPnP2R1/P5P1/5Q2/3pN1p1/3R2K b - 1 40
+
+- - b q - - r - 
+r - - k - - - p 
+- p - - p - - - 
+p P n P - - R - 
+P - - - - b P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - - K - 
+2bq2r1/r2k3p/1p2p3/pPnP2R1/P4bP1/5Q2/3pN1p1/3R2K w - 2 41
+
+- - b q - - r - 
+r - - k - - R p 
+- p - - p - - - 
+p P n P - - - - 
+P - - - - b P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - - K - 
+2bq2r1/r2k2Rp/1p2p3/pPnP4/P4bP1/5Q2/3pN1p1/3R2K b - 3 41
+
+- - b q - - r - 
+r - - - - - R p 
+- p - k p - - - 
+p P n P - - - - 
+P - - - - b P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - - K - 
+2bq2r1/r5Rp/1p1kp3/pPnP4/P4bP1/5Q2/3pN1p1/3R2K w - 4 42
+
+- - b q - - r - 
+r - - - - - - R 
+- p - k p - - - 
+p P n P - - - - 
+P - - - - b P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - - K - 
+2bq2r1/r6R/1p1kp3/pPnP4/P4bP1/5Q2/3pN1p1/3R2K b - 0 42
+
+- - b q - - - - 
+r - - - - - - R 
+- p - k p - r - 
+p P n P - - - - 
+P - - - - b P - 
+- - - - - Q - - 
+- - - p N - p - 
+- - - R - - K - 
+2bq4/r6R/1p1kp1r1/pPnP4/P4bP1/5Q2/3pN1p1/3R2K w - 1 43
+
+- - b q - - - - 
+r - - - - - - R 
+- p - k p - r - 
+p P n P - - - - 
+P - - - - b P - 
+- - - - - - - - 
+- - - p N - p - 
+- - - R - Q K - 
+2bq4/r6R/1p1kp1r1/pPnP4/P4bP1/8/3pN1p1/3R1QK b - 2 43
+
+- - b q - - - - 
+r - - - - - - R 
+- p - k p - r - 
+p P - P - - - - 
+P - - - - b P - 
+- - - n - - - - 
+- - - p N - p - 
+- - - R - Q K - 
+2bq4/r6R/1p1kp1r1/pP1P4/P4bP1/3n4/3pN1p1/3R1QK w - 3 44
+
+- - b q - - - - 
+r - - - - - - R 
+- p - k p - r - 
+p P - P - - P - 
+P - - - - b - - 
+- - - n - - - - 
+- - - p N - p - 
+- - - R - Q K - 
+2bq4/r6R/1p1kp1r1/pP1P2P1/P4b2/3n4/3pN1p1/3R1QK b - 0 44
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k p - r - 
+p P - P - - q - 
+P - - - - b - - 
+- - - n - - - - 
+- - - p N - p - 
+- - - R - Q K - 
+2b5/r6R/1p1kp1r1/pP1P2q1/P4b2/3n4/3pN1p1/3R1QK w - 0 45
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - b - - 
+- - - n - - - - 
+- - - p N - p - 
+- - - R - Q K - 
+2b5/r6R/1p1kP1r1/pP4q1/P4b2/3n4/3pN1p1/3R1QK b - 0 45
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - b - - 
+- - - - - - - - 
+- - - p N - p - 
+- - n R - Q K - 
+2b5/r6R/1p1kP1r1/pP4q1/P4b2/8/3pN1p1/2nR1QK w - 1 46
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - b - - 
+- - - - - - - - 
+- - - p - - p - 
+- - N R - Q K - 
+2b5/r6R/1p1kP1r1/pP4q1/P4b2/8/3p2p1/2NR1QK b - 0 46
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - b - - 
+- - - - - - - - 
+- - - p - - - - 
+- - N R - q K - 
+2b5/r6R/1p1kP1r1/pP4q1/P4b2/8/3p4/2NR1qK w - 0 47
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - b - - 
+- - - - - - - - 
+- - - p - - - - 
+- - N R - K - - 
+2b5/r6R/1p1kP1r1/pP4q1/P4b2/8/3p4/2NR1K b - 0 47
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - - - - 
+- - - - - - - - 
+- - - p - - - b 
+- - N R - K - - 
+2b5/r6R/1p1kP1r1/pP4q1/P7/8/3p3b/2NR1K w - 1 48
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - - - - q - 
+P - - - - - - - 
+- - - - - - - - 
+- - - R - - - b 
+- - N - - K - - 
+2b5/r6R/1p1kP1r1/pP4q1/P7/8/3R3b/2N2K b - 0 48
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - q - - - - 
+P - - - - - - - 
+- - - - - - - - 
+- - - R - - - b 
+- - N - - K - - 
+2b5/r6R/1p1kP1r1/pP1q4/P7/8/3R3b/2N2K w - 1 49
+
+- - b - - - - - 
+r - - - - - - R 
+- p - k P - r - 
+p P - q - - - - 
+P - - - - - - - 
+- - - N - - - - 
+- - - R - - - b 
+- - - - - K - - 
+2b5/r6R/1p1kP1r1/pP1q4/P7/3N4/3R3b/5K b - 2 49
+
+- - b - - - - - 
+r - - - - - r R 
+- p - k P - - - 
+p P - q - - - - 
+P - - - - - - - 
+- - - N - - - - 
+- - - R - - - b 
+- - - - - K - - 
+2b5/r5rR/1p1kP3/pP1q4/P7/3N4/3R3b/5K w - 3 50
+
+- - b - - - - - 
+r - - - P - r R 
+- p - k - - - - 
+p P - q - - - - 
+P - - - - - - - 
+- - - N - - - - 
+- - - R - - - b 
+- - - - - K - - 
+2b5/r3P1rR/1p1k4/pP1q4/P7/3N4/3R3b/5K b - 0 50
+
+- - b - - - - - 
+r - - - P - - R 
+- p - k - - - - 
+p P - q - - - - 
+P - - - - - - - 
+- - - N - - - - 
+- - - R - - r b 
+- - - - - K - - 
+2b5/r3P2R/1p1k4/pP1q4/P7/3N4/3R2rb/5K w - 1 51
+
+- - b - - - - - 
+r - - - P - - R 
+- p - k - - - - 
+p P - q - - - - 
+P - - - - - - - 
+- - - N - - - - 
+- - - - R - r b 
+- - - - - K - - 
+2b5/r3P2R/1p1k4/pP1q4/P7/3N4/4R1rb/5K b - 1 51
+
+- - b - - - - - 
+- - - - P - - R 
+r p - k - - - - 
+p P - q - - - - 
+P - - - - - - - 
+- - - N - - - - 
+- - - - R - r b 
+- - - - - K - - 
+2b5/4P2R/rp1k4/pP1q4/P7/3N4/4R1rb/5K w - 2 52
+
+- - b - - - - - 
+- - - - P - - R 
+r p - k - - - - 
+p P - q - - - - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - r b 
+- - - - - K - - 
+2b5/4P2R/rp1k4/pP1q4/PN6/8/4R1rb/5K b - 1 52
+
+- - b - - - - - 
+r - - - P - - R 
+- p - k - - - - 
+p P - q - - - - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - r b 
+- - - - - K - - 
+2b5/r3P2R/1p1k4/pP1q4/PN6/8/4R1rb/5K w - 2 53
+
+- - b - - - - - 
+r - - - P - - R 
+- p - k - - - - 
+p P - q - - - - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - r b 
+- - - - K - - - 
+2b5/r3P2R/1p1k4/pP1q4/PN6/8/4R1rb/4K b - 1 53
+
+- - b - - - - - 
+r - - - P - - R 
+- p - k - - - - 
+p P - q - - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - b 
+- - - - K - - - 
+2b5/r3P2R/1p1k4/pP1q2r1/PN6/8/4R2b/4K w - 2 54
+
+- - b - - - - - 
+r - - - P - R - 
+- p - k - - - - 
+p P - q - - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - b 
+- - - - K - - - 
+2b5/r3P1R1/1p1k4/pP1q2r1/PN6/8/4R2b/4K b - 1 54
+
+- - - - - - - - 
+r - - - P - R - 
+- p - k b - - - 
+p P - q - - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - b 
+- - - - K - - - 
+8/r3P1R1/1p1kb3/pP1q2r1/PN6/8/4R2b/4K w - 2 55
+
+- - - - - - - - 
+r - - - P - R - 
+- p - k b - - - 
+p P - q - - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - b 
+- - - - - K - - 
+8/r3P1R1/1p1kb3/pP1q2r1/PN6/8/4R2b/5K b - 1 55
+
+- - - - - - - - 
+r - - - P - R - 
+- p - k b - - - 
+p P - q b - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - - 
+- - - - - K - - 
+8/r3P1R1/1p1kb3/pP1qb1r1/PN6/8/4R3/5K w - 2 56
+
+- - - - Q - - - 
+r - - - - - R - 
+- p - k b - - - 
+p P - q b - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - - 
+- - - - - K - - 
+4Q3/r5R1/1p1kb3/pP1qb1r1/PN6/8/4R3/5K b - 1 56
+
+- - b - Q - - - 
+r - - - - - R - 
+- p - k - - - - 
+p P - q b - r - 
+P N - - - - - - 
+- - - - - - - - 
+- - - - R - - - 
+- - - - - K - - 
+2b1Q3/r5R1/1p1k4/pP1qb1r1/PN6/8/4R3/5K w - 2 57
+
+- - b - Q - - - 
+r - - - - - R - 
+- p - k - - - - 
+p P - N b - r - 
+P - - - - - - - 
+- - - - - - - - 
+- - - - R - - - 
+- - - - - K - - 
+2b1Q3/r5R1/1p1k4/pP1Nb1r1/P7/8/4R3/5K b - 0 57
+
+- - b - Q - - - 
+r - - - - - R - 
+- p - k - - - - 
+p P - N b - - - 
+P - - - - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b1Q3/r5R1/1p1k4/pP1Nb3/P7/6r1/4R3/5K w - 1 58
+
+- - b - - - - - 
+r - - - - - R - 
+- p - k Q - - - 
+p P - N b - - - 
+P - - - - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b5/r5R1/1p1kQ3/pP1Nb3/P7/6r1/4R3/5K b - 2 58
+
+- - b - - - - - 
+r - - - - - R - 
+- p - - Q - - - 
+p P k N b - - - 
+P - - - - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b5/r5R1/1p2Q3/pPkNb3/P7/6r1/4R3/5K w - 3 59
+
+- - b - - - - - 
+r - R - - - - - 
+- p - - Q - - - 
+p P k N b - - - 
+P - - - - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b5/r1R5/1p2Q3/pPkNb3/P7/6r1/4R3/5K b - 4 59
+
+- - b - - - - - 
+r - b - - - - - 
+- p - - Q - - - 
+p P k N - - - - 
+P - - - - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b5/r1b5/1p2Q3/pPkN4/P7/6r1/4R3/5K w - 0 60
+
+- - b - - - - - 
+r - b - - - - - 
+- p - - Q N - - 
+p P k - - - - - 
+P - - - - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b5/r1b5/1p2QN2/pPk5/P7/6r1/4R3/5K b - 1 60
+
+- - b - - - - - 
+r - b - - - - - 
+- p - - Q N - - 
+p P - - - - - - 
+P - - k - - - - 
+- - - - - - r - 
+- - - - R - - - 
+- - - - - K - - 
+2b5/r1b5/1p2QN2/pP6/P2k4/6r1/4R3/5K w - 2 61
+
+- - b - - - - - 
+r - b - - - - - 
+- p - - Q N - - 
+p P - - - - - - 
+P - - k - - - - 
+- - - - - - r - 
+- - - - - R - - 
+- - - - - K - - 
+2b5/r1b5/1p2QN2/pP6/P2k4/6r1/5R2/5K b - 3 61
+
+- - - - - - - - 
+r - b - - - - - 
+- p - - b N - - 
+p P - - - - - - 
+P - - k - - - - 
+- - - - - - r - 
+- - - - - R - - 
+- - - - - K - - 
+8/r1b5/1p2bN2/pP6/P2k4/6r1/5R2/5K w - 0 62
+
+- - - - - - - - 
+r - b - - - - - 
+- p - - b - - - 
+p P - - - - - - 
+P - - k N - - - 
+- - - - - - r - 
+- - - - - R - - 
+- - - - - K - - 
+8/r1b5/1p2b3/pP6/P2kN3/6r1/5R2/5K b - 1 62
+
+- - - - - - - - 
+r - b - - - - - 
+- p - - b - - - 
+p P - - - - - - 
+P - - k N - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - K - - 
+8/r1b5/1p2b3/pP6/P2kN3/4r3/5R2/5K w - 2 63
+
+- - - - - - - - 
+r - b - - - - - 
+- p - - b - - - 
+p P - - - - - - 
+P - - k N - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - K - 
+8/r1b5/1p2b3/pP6/P2kN3/4r3/5R2/6K b - 3 63
+
+- - - - - - - - 
+r - b - - - - - 
+- p - - b - - - 
+p P - - - - - - 
+P - k - N - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - K - 
+8/r1b5/1p2b3/pP6/P1k1N3/4r3/5R2/6K w - 4 64
+
+- - - - - - - - 
+r - b - - - - - 
+- p - N b - - - 
+p P - - - - - - 
+P - k - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - K - 
+8/r1b5/1p1Nb3/pP6/P1k5/4r3/5R2/6K b - 5 64
+
+- - - - - - - - 
+r - b - - - - - 
+- p - N b - - - 
+p P - k - - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - K - 
+8/r1b5/1p1Nb3/pP1k4/P7/4r3/5R2/6K w - 6 65
+
+- - - - - - - - 
+r N b - - - - - 
+- p - - b - - - 
+p P - k - - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - K - 
+8/rNb5/1p2b3/pP1k4/P7/4r3/5R2/6K b - 7 65
+
+- - - b - - - - 
+r N - - - - - - 
+- p - - b - - - 
+p P - k - - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - K - 
+3b4/rN6/1p2b3/pP1k4/P7/4r3/5R2/6K w - 8 66
+
+- - - b - - - - 
+r N - - - - - - 
+- p - - b - - - 
+p P - k - - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - K 
+- - - - - - - - 
+3b4/rN6/1p2b3/pP1k4/P7/4r3/5R1K/ b - 9 66
+
+- - - b - - - - 
+r N - - - - - - 
+- p - - b - - - 
+p P - - k - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - K 
+- - - - - - - - 
+3b4/rN6/1p2b3/pP2k3/P7/4r3/5R1K/ w - 10 67
+
+- - - b - - - - 
+r N - - - - - - 
+- p - - b - - - 
+p P - - k - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - - K 
+3b4/rN6/1p2b3/pP2k3/P7/4r3/5R2/7K b - 11 67
+
+- - - - - - - - 
+r N - - b - - - 
+- p - - b - - - 
+p P - - k - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - - K 
+8/rN2b3/1p2b3/pP2k3/P7/4r3/5R2/7K w - 12 68
+
+- - - N - - - - 
+r - - - b - - - 
+- p - - b - - - 
+p P - - k - - - 
+P - - - - - - - 
+- - - - r - - - 
+- - - - - R - - 
+- - - - - - - K 
+3N4/r3b3/1p2b3/pP2k3/P7/4r3/5R2/7K b - 13 68
+
+- - - N - - - - 
+r - - - b - - - 
+- p - - - - - - 
+p P - - k - - - 
+P - - - - - - - 
+- b - - r - - - 
+- - - - - R - - 
+- - - - - - - K 
+3N4/r3b3/1p6/pP2k3/P7/1b2r3/5R2/7K w - 14 69
+
+- - - N - - - - 
+r - - - b - - - 
+- p - - - - - - 
+p P - - k - - - 
+P - - - - - - - 
+- b - - r - - - 
+- - - - - - - R 
+- - - - - - - K 
+3N4/r3b3/1p6/pP2k3/P7/1b2r3/7R/7K b - 15 69
+
+- - - N - - - - 
+r - - - b - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- b - - r - - - 
+- - - - - - - R 
+- - - - - - - K 
+3N4/r3b3/1p6/pP6/P3k3/1b2r3/7R/7K w - 16 70
+
+- - - N - - - - 
+r - - - b - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- b - - r - - - 
+- - - - - - - R 
+- - - - - - K - 
+3N4/r3b3/1p6/pP6/P3k3/1b2r3/7R/6K b - 17 70
+
+- - - N - - - - 
+- - - r b - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- b - - r - - - 
+- - - - - - - R 
+- - - - - - K - 
+3N4/3rb3/1p6/pP6/P3k3/1b2r3/7R/6K w - 18 71
+
+- - - - - - - - 
+- - - r b - - - 
+- p N - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- b - - r - - - 
+- - - - - - - R 
+- - - - - - K - 
+8/3rb3/1pN5/pP6/P3k3/1b2r3/7R/6K b - 19 71
+
+- - - - - - - - 
+- - - r b - - - 
+- p N - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- b - r - - - - 
+- - - - - - - R 
+- - - - - - K - 
+8/3rb3/1pN5/pP6/P3k3/1b1r4/7R/6K w - 20 72
+
+- - - - - - - - 
+- - - r b - - - 
+- p - - - - - - 
+p P - - N - - - 
+P - - - k - - - 
+- b - r - - - - 
+- - - - - - - R 
+- - - - - - K - 
+8/3rb3/1p6/pP2N3/P3k3/1b1r4/7R/6K b - 21 72
+
+- - - - - - - - 
+- - - r b - - - 
+- p - - - - - - 
+p P - - N - - - 
+P - - - k - - - 
+- - - r - - - - 
+b - - - - - - R 
+- - - - - - K - 
+8/3rb3/1p6/pP2N3/P3k3/3r4/b6R/6K w - 22 73
+
+- - - - - - - - 
+- - - r b - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- - - r - N - - 
+b - - - - - - R 
+- - - - - - K - 
+8/3rb3/1p6/pP6/P3k3/3r1N2/b6R/6K b - 23 73
+
+- - - b - - - - 
+- - - r - - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- - - r - N - - 
+b - - - - - - R 
+- - - - - - K - 
+3b4/3r4/1p6/pP6/P3k3/3r1N2/b6R/6K w - 24 74
+
+- - - b - - - - 
+- - - r - - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - - 
+- - - r - N - - 
+b R - - - - - - 
+- - - - - - K - 
+3b4/3r4/1p6/pP6/P3k3/3r1N2/bR6/6K b - 25 74
+
+- - - - - - - - 
+- - - r - - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - b 
+- - - r - N - - 
+b R - - - - - - 
+- - - - - - K - 
+8/3r4/1p6/pP6/P3k2b/3r1N2/bR6/6K w - 26 75
+
+- - - - - - - - 
+- - - r - - - - 
+- p - - - - - - 
+p P - - - - - - 
+P - - - k - - N 
+- - - r - - - - 
+b R - - - - - - 
+- - - - - - K - 
+8/3r4/1p6/pP6/P3k2N/3r4/bR6/6K b - 0 75
+
+- - - - - - - - 
+- - - - - - - - 
+- p - r - - - - 
+p P - - - - - - 
+P - - - k - - N 
+- - - r - - - - 
+b R - - - - - - 
+- - - - - - K - 
+8/8/1p1r4/pP6/P3k2N/3r4/bR6/6K w - 1 76
+
+- - - - - - - - 
+- - - - - - - - 
+- p - r - - - - 
+p P - - - - - - 
+P - - - k - - N 
+- - - r - - - - 
+b R - - - - - K 
+- - - - - - - - 
+8/8/1p1r4/pP6/P3k2N/3r4/bR5K/ b - 2 76
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - - - 
+p P - - - - - - 
+P - - - k - - N 
+- - - r - - - - 
+b R - - - - - K 
+- - - - - - - - 
+8/8/1pr5/pP6/P3k2N/3r4/bR5K/ w - 3 77
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - r - - - - 
+b R - - - - - K 
+- - - - - - - - 
+8/8/1pr3N1/pP6/P3k3/3r4/bR5K/ b - 4 77
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - - r - - - 
+b R - - - - - K 
+- - - - - - - - 
+8/8/1pr3N1/pP6/P3k3/4r3/bR5K/ w - 5 78
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - - r - - - 
+b R - - - - - - 
+- - - - - - K - 
+8/8/1pr3N1/pP6/P3k3/4r3/bR6/6K b - 6 78
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - b - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - - r - - - 
+- R - - - - - - 
+- - - - - - K - 
+8/8/1pr1b1N1/pP6/P3k3/4r3/1R6/6K w - 7 79
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - b - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - - r - - - 
+- - - - - - - - 
+- R - - - - K - 
+8/8/1pr1b1N1/pP6/P3k3/4r3/8/1R4K b - 8 79
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - b - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - - - - r - 
+- - - - - - - - 
+- R - - - - K - 
+8/8/1pr1b1N1/pP6/P3k3/6r1/8/1R4K w - 9 80
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - b - N - 
+p P - - - - - - 
+P - - - k - - - 
+- - - - - - r - 
+- - - - - - - - 
+- R - - - K - - 
+8/8/1pr1b1N1/pP6/P3k3/6r1/8/1R3K b - 10 80
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - N - 
+p P - - - b - - 
+P - - - k - - - 
+- - - - - - r - 
+- - - - - - - - 
+- R - - - K - - 
+8/8/1pr3N1/pP3b2/P3k3/6r1/8/1R3K w - 11 81
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - N - 
+p P - - - b - - 
+P - - - k - - - 
+- - - - - - r - 
+- - - - - - - - 
+- R - - K - - - 
+8/8/1pr3N1/pP3b2/P3k3/6r1/8/1R2K b - 12 81
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - K - - - 
+8/8/1pr3r1/pP3b2/P3k3/8/8/1R2K w - 0 82
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - R - K - - - 
+8/8/1pr3r1/pP3b2/P3k3/8/8/2R1K b - 1 82
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - R - K - - - 
+8/8/1pr3r1/pP3b2/P4k2/8/8/2R1K w - 2 83
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - R K - - - - 
+8/8/1pr3r1/pP3b2/P4k2/8/8/2RK b - 3 83
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - - - - - 
+- - - - - - k - 
+- - - - - - - - 
+- - R K - - - - 
+8/8/1pr3r1/pP3b2/P7/6k1/8/2RK w - 4 84
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - - - - - 
+- - R - - - k - 
+- - - - - - - - 
+- - - K - - - - 
+8/8/1pr3r1/pP3b2/P7/2R3k1/8/3K b - 5 84
+
+- - - - - - - - 
+- - - - - - - - 
+- p r - - - r - 
+p P - - - b - - 
+P - - - - - - - 
+- - R - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+8/8/1pr3r1/pP3b2/P7/2R5/7k/3K w - 6 85
+
+- - - - - - - - 
+- - - - - - - - 
+- p P - - - r - 
+p - - - - b - - 
+P - - - - - - - 
+- - R - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+8/8/1pP3r1/p4b2/P7/2R5/7k/3K b - 0 85
+
+- - - - - - - - 
+- - - - - - - - 
+- - P - - - r - 
+p p - - - b - - 
+P - - - - - - - 
+- - R - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+8/8/2P3r1/pp3b2/P7/2R5/7k/3K w - 0 86
+
+- - - - - - - - 
+- - - - - - - - 
+- - P - - - r - 
+p P - - - b - - 
+- - - - - - - - 
+- - R - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+8/8/2P3r1/pP3b2/8/2R5/7k/3K b - 0 86
+
+- - - - - - r - 
+- - - - - - - - 
+- - P - - - - - 
+p P - - - b - - 
+- - - - - - - - 
+- - R - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+6r1/8/2P5/pP3b2/8/2R5/7k/3K w - 1 87
+
+- - - - - - r - 
+- - - - - - - - 
+- - P - - - - - 
+p P - - - b - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - k 
+- - - K - - - - 
+6r1/8/2P5/pP3b2/8/3R4/7k/3K b - 2 87
+
+- - - r - - - - 
+- - - - - - - - 
+- - P - - - - - 
+p P - - - b - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - k 
+- - - K - - - - 
+3r4/8/2P5/pP3b2/8/3R4/7k/3K w - 3 88
+
+- - - r - - - - 
+- - - - - - - - 
+- - P - - - - - 
+p P - R - b - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+3r4/8/2P5/pP1R1b2/8/8/7k/3K b - 4 88
+
+- - r - - - - - 
+- - - - - - - - 
+- - P - - - - - 
+p P - R - b - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - k 
+- - - K - - - - 
+2r5/8/2P5/pP1R1b2/8/8/7k/3K w - 5 89
+
+- - r - - - - - 
+- - - - - - - - 
+- - P - - - - - 
+p P - R - b - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - k 
+- - - - - - - - 
+2r5/8/2P5/pP1R1b2/8/8/3K3k/ b - 6 89
+
+- - r - - - - - 
+- - - - - - - - 
+- - P - - - - - 
+p P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - k 
+- b - - - - - - 
+2r5/8/2P5/pP1R4/8/8/3K3k/1b w - 7 90
+
+- - r - - - - - 
+- - P - - - - - 
+- - - - - - - - 
+p P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - k 
+- b - - - - - - 
+2r5/2P5/8/pP1R4/8/8/3K3k/1b b - 0 90
+
+- - r - - - - - 
+- - P - - - - - 
+- - - - - - - - 
+p P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+b - - K - - - k 
+- - - - - - - - 
+2r5/2P5/8/pP1R4/8/8/b2K3k/ w - 1 91
+
+- - r - - - - - 
+- - P - - - - - 
+- - - - - - - - 
+p P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+b - - - K - - k 
+- - - - - - - - 
+2r5/2P5/8/pP1R4/8/8/b3K2k/ b - 2 91
+
+- - r - - - - - 
+- - P - - - - - 
+- - - - - - - - 
+- P - R - - - - 
+p - - - - - - - 
+- - - - - - - - 
+b - - - K - - k 
+- - - - - - - - 
+2r5/2P5/8/1P1R4/p7/8/b3K2k/ w - 0 92
+
+- - r - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - - - - - - 
+b - - - K - - k 
+- - - - - - - - 
+2r5/2P5/1P6/3R4/p7/8/b3K2k/ b - 0 92
+
+- - r - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - - - - - k 
+b - - - K - - - 
+- - - - - - - - 
+2r5/2P5/1P6/3R4/p7/7k/b3K3/ w - 1 93
+
+- - r - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - - - - - k 
+b - - - - - - - 
+- - - - - K - - 
+2r5/2P5/1P6/3R4/p7/7k/b7/5K b - 2 93
+
+- - r - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - - - k 
+b - - - - - - - 
+- - - - - K - - 
+2r5/2P5/1P6/3R4/8/p6k/b7/5K w - 0 94
+
+- - r - - - - - 
+- - P - - - - - 
+- P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - - - k 
+b - - - - - - - 
+- - - - - K - - 
+2r5/2P5/1P1R4/8/8/p6k/b7/5K b - 1 94
+
+- - r - - - - - 
+- - P - - - - - 
+- P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - - - k 
+- - - - - K - - 
+2r5/2P5/1P1R4/8/8/p7/b6k/5K w - 2 95
+
+- - r - - - - - 
+- - P - - - - - 
+- P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - K - k 
+- - - - - - - - 
+2r5/2P5/1P1R4/8/8/p7/b4K1k/ b - 3 95
+
+- - - r - - - - 
+- - P - - - - - 
+- P - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - K - k 
+- - - - - - - - 
+3r4/2P5/1P1R4/8/8/p7/b4K1k/ w - 4 96
+
+- - - r - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - K - k 
+- - - - - - - - 
+3r4/2P5/1P6/3R4/8/p7/b4K1k/ b - 1 96
+
+- r - - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - K - k 
+- - - - - - - - 
+1r6/2P5/1P6/3R4/8/p7/b4K1k/ w - 2 97
+
+- r - - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - K - - k 
+- - - - - - - - 
+1r6/2P5/1P6/3R4/8/p7/b3K2k/ b - 1 97
+
+- r - - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - - - - 
+- - - - K - - k 
+- b - - - - - - 
+1r6/2P5/1P6/3R4/8/p7/4K2k/1b w - 2 98
+
+- r - - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - - K - - k 
+- b - - - - - - 
+1r6/2P5/1P6/8/3R4/p7/4K2k/1b b - 1 98
+
+- r - - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - - K - - - 
+- b - - - - - k 
+1r6/2P5/1P6/8/3R4/p7/4K3/1b5k w - 2 99
+
+- r - - - - - - 
+- - P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - K - - - - 
+- b - - - - - k 
+1r6/2P5/1P6/8/3R4/p7/3K4/1b5k b - 1 99
+
+- - - - - - - - 
+- r P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+p - - - - - - - 
+- - - K - - - - 
+- b - - - - - k 
+8/1rP5/1P6/8/3R4/p7/3K4/1b5k w - 2 100
+
+- - - - - - - - 
+- r P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+p - - - K - - - 
+- - - - - - - - 
+- b - - - - - k 
+8/1rP5/1P6/8/3R4/p3K3/8/1b5k b - 1 100
+
+- - - - - - - - 
+- r P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+p - - - K - - - 
+b - - - - - - - 
+- - - - - - - k 
+8/1rP5/1P6/8/3R4/p3K3/b7/7k w - 2 101
+
+- - - - - - - - 
+- r P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R K - - - 
+p - - - - - - - 
+b - - - - - - - 
+- - - - - - - k 
+8/1rP5/1P6/8/3RK3/p7/b7/7k b - 1 101
+
+- - - - - - - - 
+- r P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - R K - - - 
+p - - - - - - - 
+b - - - - - - - 
+- - - - - - k - 
+8/1rP5/1P6/8/3RK3/p7/b7/6k w - 2 102
+
+- - - R - - - - 
+- r P - - - - - 
+- P - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+p - - - - - - - 
+b - - - - - - - 
+- - - - - - k - 
+3R4/1rP5/1P6/8/4K3/p7/b7/6k b - 1 102
+
+- - - R - - - - 
+- - P - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+p - - - - - - - 
+b - - - - - - - 
+- - - - - - k - 
+3R4/2P5/1r6/8/4K3/p7/b7/6k w - 0 103
+
+- - - R - - - - 
+- - P - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - - 
+- - - - - - k - 
+3R4/2P5/1r6/8/8/p4K2/b7/6k b - 1 103
+
+- - - R - - - - 
+- - P - - - - - 
+r - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - - 
+- - - - - - k - 
+3R4/2P5/r7/8/8/p4K2/b7/6k w - 2 104
+
+- - Q R - - - - 
+- - - - - - - - 
+r - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - - 
+- - - - - - k - 
+2QR4/8/r7/8/8/p4K2/b7/6k b - 1 104
+
+- - Q R - - - - 
+- - - - - - - - 
+r - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - k 
+- - - - - - - - 
+2QR4/8/r7/8/8/p4K2/b6k/ w - 2 105
+
+- - Q - - - - - 
+- - - - - - - - 
+r - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - k 
+- - - - - - - - 
+2Q5/8/r7/3R4/8/p4K2/b6k/ b - 3 105
+
+- - Q - - - - - 
+- - - - - - - - 
+- r - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - k 
+- - - - - - - - 
+2Q5/8/1r6/3R4/8/p4K2/b6k/ w - 4 106
+
+- - - - - - - Q 
+- - - - - - - - 
+- r - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - k 
+- - - - - - - - 
+7Q/8/1r6/3R4/8/p4K2/b6k/ b - 5 106
+
+- - - - - - - Q 
+- - - - - - - - 
+- r - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - - K - - 
+b - - - - - - - 
+- - - - - - k - 
+7Q/8/1r6/3R4/8/p4K2/b7/6k w - 6 107
+
+- - - - - - - Q 
+- - - - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - R - K - - 
+b - - - - - - - 
+- - - - - - k - 
+7Q/8/1r6/8/8/p2R1K2/b7/6k b - 7 107
+
+- - - - - - - Q 
+- - - - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+p - - R - K - - 
+b - - - - - - - 
+- - - - - k - - 
+7Q/8/1r6/8/8/p2R1K2/b7/5k w - 8 108
+
+- - - - - - - Q 
+- - - - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+p - - R - - - - 
+b - - - - - - - 
+- - - - - k - - 
+7Q/8/1r6/8/5K2/p2R4/b7/5k b - 9 108
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - - - K - - 
+p - - R - - - - 
+b - - - - - - - 
+- - - - - k - - 
+7Q/8/5r2/8/5K2/p2R4/b7/5k w - 10 109
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - r - - 
+- - - - K - - - 
+- - - - - - - - 
+p - - R - - - - 
+b - - - - - - - 
+- - - - - k - - 
+7Q/8/5r2/4K3/8/p2R4/b7/5k b - 11 109
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - r - - 
+- - - - K - - - 
+- - - - - - - - 
+p - - R - - - - 
+b - - - - k - - 
+- - - - - - - - 
+7Q/8/5r2/4K3/8/p2R4/b4k2/ w - 12 110
+
+- - - R - - - Q 
+- - - - - - - - 
+- - - - - r - - 
+- - - - K - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - k - - 
+- - - - - - - - 
+3R3Q/8/5r2/4K3/8/p7/b4k2/ b - 13 110
+
+- - - R - - - Q 
+- - - - - - - - 
+- - - - - r - - 
+- - - - K - - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - - - - - 
+- - - - k - - - 
+3R3Q/8/5r2/4K3/8/p7/b7/4k w - 14 111
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - K - - - 
+- - - - - - - Q 
+p - - - - - - - 
+b - - - - - - - 
+- - - - k - - - 
+3R4/8/5r2/4K3/7Q/p7/b7/4k b - 15 111
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - Q 
+p - - - - - - - 
+b - - - - r - - 
+- - - - k - - - 
+3R4/8/8/4K3/7Q/p7/b4r2/4k w - 16 112
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - Q 
+p - - - - - - - 
+b - - - - r - - 
+- - - - k - - - 
+3R4/8/8/8/3K3Q/p7/b4r2/4k b - 17 112
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - Q 
+p - - - - - - - 
+b - - k - r - - 
+- - - - - - - - 
+3R4/8/8/8/3K3Q/p7/b2k1r2/ w - 18 113
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - Q - 
+p - - - - - - - 
+b - - k - r - - 
+- - - - - - - - 
+3R4/8/8/8/3K2Q1/p7/b2k1r2/ b - 19 113
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - Q - 
+p - - - - - - - 
+b - k - - r - - 
+- - - - - - - - 
+3R4/8/8/8/3K2Q1/p7/b1k2r2/ w - 20 114
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - Q - 
+p - - - - - - - 
+b - k - - r - - 
+- - - - - - - - 
+3R4/8/8/8/4K1Q1/p7/b1k2r2/ b - 21 114
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - Q - 
+p - - - - - - - 
+b - k - r - - - 
+- - - - - - - - 
+3R4/8/8/8/4K1Q1/p7/b1k1r3/ w - 22 115
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - Q - 
+p - - - - - - - 
+b - k - r - - - 
+- - - - - - - - 
+3R4/8/8/5K2/6Q1/p7/b1k1r3/ b - 23 115
+
+- - - R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - Q - 
+p - - - - - - - 
+b - - - r - - - 
+- k - - - - - - 
+3R4/8/8/5K2/6Q1/p7/b3r3/1k w - 24 116
+
+- - - R - - - - 
+- - - - - - Q - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+p - - - - - - - 
+b - - - r - - - 
+- k - - - - - - 
+3R4/6Q1/8/5K2/8/p7/b3r3/1k b - 25 116
+
+- - - R - - - - 
+- - - - - b Q - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+p - - - - - - - 
+- - - - r - - - 
+- k - - - - - - 
+3R4/5bQ1/8/5K2/8/p7/4r3/1k w - 26 117
+
+- - - R - - - - 
+- - - - - b Q - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+p - - - - - - - 
+- - - - r - - - 
+- k - - - - - - 
+3R4/5bQ1/8/6K1/8/p7/4r3/1k b - 27 117
+
+- - - R - - - - 
+- - - - - b Q - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+p - - - r - - - 
+- k - - - - - - 
+3R4/5bQ1/8/6K1/8/8/p3r3/1k w - 0 118
+
+- - - - - - - - 
+- - - - - b Q - 
+- - - - - - - - 
+- - - - - - K - 
+- - - R - - - - 
+- - - - - - - - 
+p - - - r - - - 
+- k - - - - - - 
+8/5bQ1/8/6K1/3R4/8/p3r3/1k b - 1 118
+
+- - - - - - - - 
+- - - - - b Q - 
+- - - - - - - - 
+- - - - - - K - 
+- - - R - - - - 
+- - - - - - - - 
+- - - - r - - - 
+q k - - - - - - 
+8/5bQ1/8/6K1/3R4/8/4r3/qk w - 1 119
+
+- - - - - - - Q 
+- - - - - b - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - R - - - - 
+- - - - - - - - 
+- - - - r - - - 
+q k - - - - - - 
+7Q/5b2/8/6K1/3R4/8/4r3/qk b - 2 119
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - b R - - - - 
+- - - - - - - - 
+- - - - r - - - 
+q k - - - - - - 
+7Q/8/8/6K1/2bR4/8/4r3/qk w - 3 120
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - K 
+- - b R - - - - 
+- - - - - - - - 
+- - - - r - - - 
+q k - - - - - - 
+7Q/8/8/7K/2bR4/8/4r3/qk b - 4 120
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - K 
+- - b R - - - - 
+- - - - - - - - 
+- - - - - - - - 
+q k - - - - - - 
+7Q/8/8/4r2K/2bR4/8/8/qk w - 5 121
+
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - b R - - - K 
+- - - - - - - - 
+- - - - - - - - 
+q k - - - - - - 
+7Q/8/8/4r3/2bR3K/8/8/qk b - 6 121
+
+- - - - - - - Q 
+- - - - - b - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - R - - - K 
+- - - - - - - - 
+- - - - - - - - 
+q k - - - - - - 
+7Q/5b2/8/4r3/3R3K/8/8/qk w - 7 122
+
+- - - R - - - Q 
+- - - - - b - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - K 
+- - - - - - - - 
+- - - - - - - - 
+q k - - - - - - 
+3R3Q/5b2/8/4r3/7K/8/8/qk b - 8 122
+
+- - - R - - - Q 
+- - - - - b - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - K 
+- - - - - - - - 
+k - - - - - - - 
+q - - - - - - - 
+3R3Q/5b2/8/4r3/7K/8/k7/q w - 9 123
+
+- - - R - - - - 
+- - - - - b Q - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - K 
+- - - - - - - - 
+k - - - - - - - 
+q - - - - - - - 
+3R4/5bQ1/8/4r3/7K/8/k7/q b - 10 123
+
+- - - R - - b - 
+- - - - - - Q - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - K 
+- - - - - - - - 
+k - - - - - - - 
+q - - - - - - - 
+3R2b1/6Q1/8/4r3/7K/8/k7/q w - 11 124
+
+- - - R - - b - 
+- - - - - - Q - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - K - 
+- - - - - - - - 
+k - - - - - - - 
+q - - - - - - - 
+3R2b1/6Q1/8/4r3/6K1/8/k7/q b - 12 124
+
+- - - R - - - - 
+- - - - - - Q - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - K - 
+- b - - - - - - 
+k - - - - - - - 
+q - - - - - - - 
+3R4/6Q1/8/4r3/6K1/1b6/k7/q w - 13 125
+
+- - - R - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - K - 
+- b - - - - - - 
+k - - - - - - - 
+q - - - - - - - 
+3R1Q2/8/8/4r3/6K1/1b6/k7/q b - 14 125
+
+- - - R - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - K - 
+- b - - - - - - 
+- k - - - - - - 
+q - - - - - - - 
+3R1Q2/8/8/4r3/6K1/1b6/1k6/q w - 15 126
+
+- R - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - K - 
+- b - - - - - - 
+- k - - - - - - 
+q - - - - - - - 
+1R3Q2/8/8/4r3/6K1/1b6/1k6/q b - 16 126
+
+- R - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- b - - r - - - 
+- k - - - - - - 
+q - - - - - - - 
+1R3Q2/8/8/8/6K1/1b2r3/1k6/q w - 17 127
+
+- R - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- b - - r - - - 
+- k - - - - - - 
+q - - - - - - - 
+1R3Q2/8/8/6K1/8/1b2r3/1k6/q b - 18 127
+
+- R - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- b - - r - - - 
+- - k - - - - - 
+q - - - - - - - 
+1R3Q2/8/8/6K1/8/1b2r3/2k5/q w - 19 128
+
+- R - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- b - - r - - - 
+- - k - - - - - 
+q - - - - - - - 
+1R3Q2/8/8/8/5K2/1b2r3/2k5/q b - 20 128
+
+- R - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+q - - - - - - - 
+- - - - - K - - 
+- b - - r - - - 
+- - k - - - - - 
+- - - - - - - - 
+1R3Q2/8/8/q7/5K2/1b2r3/2k5/ w - 21 129
+
+- - - - - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+q - - - - - - - 
+- - - - - K - - 
+- R - - r - - - 
+- - k - - - - - 
+- - - - - - - - 
+5Q2/8/8/q7/5K2/1R2r3/2k5/ b - 0 129
+
+- - - - - Q - - 
+q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- R - - r - - - 
+- - k - - - - - 
+- - - - - - - - 
+5Q2/q7/8/8/5K2/1R2r3/2k5/ w - 1 130
+
+- - - - - - Q - 
+q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- R - - r - - - 
+- - k - - - - - 
+- - - - - - - - 
+6Q1/q7/8/8/5K2/1R2r3/2k5/ b - 2 130
+
+- - - - - - Q - 
+- - q - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- R - - r - - - 
+- - k - - - - - 
+- - - - - - - - 
+6Q1/2q5/8/8/5K2/1R2r3/2k5/ w - 3 131
+
+- - - - - - Q - 
+- - q - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- R - - r - - - 
+- - k - - - - - 
+- - - - - - - - 
+6Q1/2q5/8/5K2/8/1R2r3/2k5/ b - 4 131
+
+- - - - - - Q - 
+- - q - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- R - - - - - - 
+- - k - r - - - 
+- - - - - - - - 
+6Q1/2q5/8/5K2/8/1R6/2k1r3/ w - 5 132
+
+Q - - - - - - - 
+- - q - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- R - - - - - - 
+- - k - r - - - 
+- - - - - - - - 
+Q7/2q5/8/5K2/8/1R6/2k1r3/ b - 6 132
+
+Q - - - - - - - 
+- - q - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - k - - - - 
+Q7/2q5/8/5K2/8/1R6/4r3/3k w - 7 133
+
+Q - - - - - - - 
+- - q - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - k - - - - 
+Q7/2q5/6K1/8/8/1R6/4r3/3k b - 8 133
+
+Q - - - - - - - 
+- - q - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - k r - - - 
+- - - - - - - - 
+Q7/2q5/6K1/8/8/1R6/3kr3/ w - 9 134
+
+- - - - - Q - - 
+- - q - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - k r - - - 
+- - - - - - - - 
+5Q2/2q5/6K1/8/8/1R6/3kr3/ b - 10 134
+
+- - - - - Q - - 
+- - q - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - - k - - - 
+5Q2/2q5/6K1/8/8/1R6/4r3/4k w - 11 135
+
+- - - - - - - - 
+- - q - - - - - 
+- - - - - - K Q 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - - k - - - 
+8/2q5/6KQ/8/8/1R6/4r3/4k b - 12 135
+
+- - - - - - - - 
+- - - - - - - q 
+- - - - - - K Q 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - - k - - - 
+8/7q/6KQ/8/8/1R6/4r3/4k w - 13 136
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - - k - - - 
+8/7Q/6K1/8/8/1R6/4r3/4k b - 0 136
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- R - - - - - - 
+- - - - r - - - 
+- - - k - - - - 
+8/7Q/6K1/8/8/1R6/4r3/3k w - 1 137
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - R - 
+- - - - r - - - 
+- - - k - - - - 
+8/7Q/6K1/8/8/6R1/4r3/3k b - 2 137
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - R - 
+- - - k r - - - 
+- - - - - - - - 
+8/7Q/6K1/8/8/6R1/3kr3/ w - 3 138
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - K 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - R - 
+- - - k r - - - 
+- - - - - - - - 
+8/7Q/7K/8/8/6R1/3kr3/ b - 4 138
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - K 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - R - 
+- - - - r - - - 
+- - k - - - - - 
+8/7Q/7K/8/8/6R1/4r3/2k w - 5 139
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - K 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - r - - - 
+- - k - - - - - 
+8/7Q/7K/8/8/3R4/4r3/2k b - 6 139
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - K 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - r - - - 
+- k - - - - - - 
+8/7Q/7K/8/8/3R4/4r3/1k w - 7 140
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - r - - - 
+- k - - - - - - 
+8/7Q/6K1/8/8/3R4/4r3/1k b - 8 140
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - r - - - 
+- - k - - - - - 
+8/7Q/6K1/8/8/3R4/4r3/2k w - 9 141
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - r - - - 
+- - k - - - - - 
+8/7Q/8/5K2/8/3R4/4r3/2k b - 10 141
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+- - k - r - - - 
+8/7Q/8/5K2/8/3R4/8/2k1r w - 11 142
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+- - k - r - - - 
+8/7Q/5K2/8/8/3R4/8/2k1r b - 12 142
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+- k - - r - - - 
+8/7Q/5K2/8/8/3R4/8/1k2r w - 13 143
+
+- - - - - - - - 
+- - - - - - K Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+- k - - r - - - 
+8/6KQ/8/8/8/3R4/8/1k2r b - 14 143
+
+- - - - - - - - 
+- - - - - - K Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - k - - - - - 
+- - - - r - - - 
+8/6KQ/8/8/8/3R4/2k5/4r w - 15 144
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - k - - - - - 
+- - - - r - - - 
+8/7Q/5K2/8/8/3R4/2k5/4r b - 16 144
+
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+- k - - r - - - 
+8/7Q/5K2/8/8/3R4/8/1k2r w - 17 145
+
+- - - - - - - - 
+- - - - - K - Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R - - - - 
+- - - - - - - - 
+- k - - r - - - 
+8/5K1Q/8/8/8/3R4/8/1k2r b - 18 145
+
+- - - - - - - - 
+- - - - - K - Q 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - R r - - - 
+- - - - - - - - 
+- k - - - - - - 
+8/5K1Q/8/8/8/3Rr3/8/1k w - 19 146
+
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - Q 
+- - - R r - - - 
+- - - - - - - - 
+- k - - - - - - 
+8/5K2/8/8/7Q/3Rr3/8/1k b - 20 146
+
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - Q 
+- - - r - - - - 
+- - - - - - - - 
+- k - - - - - - 
+8/5K2/8/8/7Q/3r4/8/1k w - 0 147
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - Q 
+- - - r - - - - 
+- - - - - - - - 
+- k - - - - - - 
+8/8/6K1/8/7Q/3r4/8/1k b - 1 147
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - Q 
+- - - r - - - - 
+k - - - - - - - 
+- - - - - - - - 
+8/8/6K1/8/7Q/3r4/k7/ w - 2 148
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - K 
+- - - - - - - Q 
+- - - r - - - - 
+k - - - - - - - 
+- - - - - - - - 
+8/8/8/7K/7Q/3r4/k7/ b - 3 148
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - K 
+- - - - - - - Q 
+- - - - - - - - 
+k - - - - - - - 
+- - - - - - - - 
+8/8/3r4/7K/7Q/8/k7/ w - 4 149
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - K Q 
+- - - - - - - - 
+k - - - - - - - 
+- - - - - - - - 
+8/8/3r4/8/6KQ/8/k7/ b - 5 149
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - K Q 
+k - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/3r4/8/6KQ/k7/8/ w - 6 150
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - - Q 
+k - - - - - - K 
+- - - - - - - - 
+- - - - - - - - 
+8/8/3r4/8/7Q/k6K/8/ b - 7 150
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - - Q 
+- - - - - - - K 
+k - - - - - - - 
+- - - - - - - - 
+8/8/3r4/8/7Q/7K/k7/ w - 8 151
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - K 
+k - - - - - - - 
+- - - - Q - - - 
+8/8/3r4/8/8/7K/k7/4Q b - 9 151
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - K 
+k - - - - - - - 
+- - - - Q - - - 
+8/8/8/8/8/3r3K/k7/4Q w - 10 152
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - K 
+- - - r - - - - 
+k - - - - - - - 
+- - - - Q - - - 
+8/8/8/8/7K/3r4/k7/4Q b - 11 152
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - K 
+- - - - - - - - 
+k - - - - - - - 
+- - - - Q - - - 
+8/8/8/8/3r3K/8/k7/4Q w - 12 153
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - r Q - - K 
+- - - - - - - - 
+k - - - - - - - 
+- - - - - - - - 
+8/8/8/8/3rQ2K/8/k7/ b - 13 153
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - r Q - - K 
+- k - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/8/3rQ2K/1k6/8/ w - 14 154
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - r Q - - - 
+- k - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/6K1/3rQ3/1k6/8/ b - 15 154
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+r - - - Q - - - 
+- k - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/6K1/r3Q3/1k6/8/ w - 16 155
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+r - - - Q - - - 
+- k - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/6K1/8/r3Q3/1k6/8/ b - 17 155
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - Q - - - 
+- k - - - - - - 
+- - - - - - - - 
+r - - - - - - - 
+8/8/6K1/8/4Q3/1k6/8/r w - 18 156
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- k - - - - - - 
+- - - - - - - - 
+r - - - Q - - - 
+8/8/6K1/8/8/1k6/8/r3Q b - 19 156
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+k - - - - - - - 
+r - - - Q - - - 
+8/8/6K1/8/8/8/k7/r3Q w - 20 157
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+k - - - - - - - 
+r - - - Q - - - 
+8/8/5K2/8/8/8/k7/r3Q b - 21 157
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+k - - - - - - - 
+- - - r Q - - - 
+8/8/5K2/8/8/8/k7/3rQ w - 22 158
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - - - - - - 
+k - - - - - - - 
+- - - r Q - - - 
+8/8/8/4K3/8/8/k7/3rQ b - 23 158
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- k - - - - - - 
+- - - - - - - - 
+- - - r Q - - - 
+8/8/8/4K3/8/1k6/8/3rQ w - 24 159
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - Q - - - 
+- k - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/4Q3/1k6/8/3r b - 25 159
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - Q - - - 
+- - - - - - - - 
+k - - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/4Q3/8/k7/3r w - 26 160
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - Q 
+- - - - - - - - 
+k - - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/7Q/8/k7/3r b - 27 160
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - Q 
+- - - - - - - - 
+- k - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/7Q/8/1k6/3r w - 28 161
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - Q - - 
+- - - - - - - - 
+- k - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/5Q2/8/1k6/3r b - 29 161
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - Q - - 
+- - k - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/5Q2/2k5/8/3r w - 30 162
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - k - - Q - - 
+- - - - - - - - 
+- - - r - - - - 
+8/8/8/4K3/8/2k2Q2/8/3r b - 31 162
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - k r - Q - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/4K3/8/2kr1Q2/8/ w - 32 163
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - k r - - - - 
+- - - - - - - - 
+- - - - - - - Q 
+8/8/8/4K3/8/2kr4/8/7Q b - 33 163
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - k - - - - 
+- - - - - - - Q 
+8/8/8/4K3/8/3r4/3k4/7Q w - 34 164
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - k - - - - 
+Q - - - - - - - 
+8/8/8/4K3/8/3r4/3k4/Q b - 35 164
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - k - - - - 
+Q - - - - - - - 
+8/8/8/4K3/8/5r2/3k4/Q w - 36 165
+
+- - - - - - - - 
+- - - - - - - - 
+Q - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/Q7/4K3/8/5r2/3k4/ b - 37 165
+
+- - - - - - - - 
+- - - - - - - - 
+Q - - - - - - - 
+- - - - K - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/Q7/4K3/5r2/8/3k4/ w - 38 166
+
+- - - - - - - - 
+- - - - - - - - 
+- - - Q - - - - 
+- - - - K - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/3Q4/4K3/5r2/8/3k4/ b - 39 166
+
+- - - - - - - - 
+- - - - - - - - 
+- - - Q - - - - 
+- - - - K - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/3Q4/4K3/3r4/8/3k4/ w - 40 167
+
+- - - - - - - - 
+- - - - - - - - 
+- Q - - - - - - 
+- - - - K - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/1Q6/4K3/3r4/8/3k4/ b - 41 167
+
+- - - - - - - - 
+- - - - - - - - 
+- Q - - - - - - 
+- - - - K - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/1Q6/4K3/6r1/8/3k4/ w - 42 168
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - Q - 
+8/8/8/4K3/6r1/8/3k4/6Q b - 43 168
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - r - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - Q - 
+8/8/8/4K3/6r1/3k4/8/6Q w - 44 169
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - r - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - Q - 
+8/8/8/3K4/6r1/3k4/8/6Q b - 45 169
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - Q - 
+8/8/8/3K4/6r1/8/2k5/6Q w - 46 170
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - k - - Q - - 
+- - - - - - - - 
+8/8/8/3K4/6r1/8/2k2Q2/ b - 47 170
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/8/8/3K4/6r1/8/5Q2/3k w - 48 171
+
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/8/3K4/8/6r1/8/5Q2/3k b - 49 171
+
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/8/3K4/8/1r6/8/5Q2/3k w - 50 172
+
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- r - - - - - - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/8/2K5/8/1r6/8/5Q2/3k b - 51 172
+
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/8/2K5/8/3r4/8/5Q2/3k w - 52 173
+
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/2K5/8/8/3r4/8/5Q2/3k b - 53 173
+
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/2K5/8/8/6r1/8/5Q2/3k w - 54 174
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - r - 
+- - - - - - - - 
+- - - - - Q - - 
+- - - k - - - - 
+8/8/1K6/8/6r1/8/5Q2/3k b - 55 174
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - Q r - 
+- - - k - - - - 
+8/8/1K6/8/8/8/5Qr1/3k w - 56 175
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+Q - - - - - r - 
+- - - k - - - - 
+8/8/1K6/8/8/8/Q5r1/3k b - 57 175
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+Q - - - - - r - 
+- - k - - - - - 
+8/8/1K6/8/8/8/Q5r1/2k w - 58 176
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+Q - - - - - r - 
+- - k - - - - - 
+8/8/8/2K5/8/8/Q5r1/2k b - 59 176
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+Q - - - - - r - 
+- - - k - - - - 
+8/8/8/2K5/8/8/Q5r1/3k w - 60 177
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- Q - - - - r - 
+- - - k - - - - 
+8/8/8/2K5/8/8/1Q4r1/3k b - 61 177
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- Q - - - - r - 
+- - - - k - - - 
+8/8/8/2K5/8/8/1Q4r1/4k w - 62 178
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - Q - - - - - 
+- - - - - - r - 
+- - - - k - - - 
+8/8/8/2K5/8/2Q5/6r1/4k b - 63 178
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - Q - - - - - 
+- - - - - - r - 
+- - - - - k - - 
+8/8/8/2K5/8/2Q5/6r1/5k w - 64 179
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+Q - - - - - - - 
+- - - - - - r - 
+- - - - - k - - 
+8/8/8/2K5/8/Q7/6r1/5k b - 65 179
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+Q - - - - - - - 
+- - - - - k r - 
+- - - - - - - - 
+8/8/8/2K5/8/Q7/5kr1/ w - 66 180
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+Q - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - k r - 
+- - - - - - - - 
+8/8/8/Q1K5/8/8/5kr1/ b - 67 180
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+Q - K - - - - - 
+- - - - - - - - 
+- - - - - k - - 
+- - - - - - r - 
+- - - - - - - - 
+8/8/8/Q1K5/8/5k2/6r1/ w - 68 181
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - k - - 
+- - - - - - r - 
+- - - - - - - - 
+Q7/8/8/2K5/8/5k2/6r1/ b - 69 181
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - r - 
+- - - - - - - - 
+Q7/8/8/2K5/8/4k3/6r1/ w - 70 182
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - k - - - 
+- - - - - - r - 
+- - - - - - - - 
+Q7/8/8/8/2K5/4k3/6r1/ b - 71 182
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - k - - - 
+- - r - - - - - 
+- - - - - - - - 
+Q7/8/8/8/2K5/4k3/2r5/ w - 72 183
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - k - - - 
+- - r - - - - - 
+- - - - - - - - 
+Q7/8/8/8/1K6/4k3/2r5/ b - 73 183
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - k - - - - 
+- - - - - - - - 
+- - r - - - - - 
+- - - - - - - - 
+Q7/8/8/8/1K1k4/8/2r5/ w - 74 184
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - r - - - - - 
+- - - - - - - - 
+Q7/8/8/1K6/3k4/8/2r5/ b - 75 184
+
+Q - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+Q7/8/8/1K6/3k4/8/4r3/ w - 76 185
+
+- - - Q - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+3Q4/8/8/1K6/3k4/8/4r3/ b - 77 185
+
+- - - Q - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+3Q4/8/8/1K2k3/8/8/4r3/ w - 78 186
+
+- - - - - - - - 
+- - Q - - - - - 
+- - - - - - - - 
+- K - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+8/2Q5/8/1K2k3/8/8/4r3/ b - 79 186
+
+- - - - - - - - 
+- - Q - - - - - 
+- - - - k - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+8/2Q5/4k3/1K6/8/8/4r3/ w - 80 187
+
+- - - - - - - - 
+- - Q - - - - - 
+- K - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+8/2Q5/1K2k3/8/8/8/4r3/ b - 81 187
+
+- - - - - - - - 
+- - Q - - - - - 
+- K - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/2Q5/1K2k3/8/8/4r3/8/ w - 82 188
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - k - - - 
+- - - - Q - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/1K2k3/4Q3/8/4r3/8/ b - 83 188
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - k - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/1K2k3/4r3/8/8/8/ w - 0 189
+
+- - - - - - - - 
+K - - - - - - - 
+- - - - k - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/K7/4k3/4r3/8/8/8/ b - 1 189
+
+- - - - - - - - 
+K - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/K7/4k3/8/4r3/8/8/ w - 2 190
+
+- - - - - - - - 
+- K - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/1K6/4k3/8/4r3/8/8/ b - 3 190
+
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/1K6/8/3k4/4r3/8/8/ w - 4 191
+
+- - - - - - - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - k - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/K7/3k4/4r3/8/8/ b - 5 191
+
+- - - - - - - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - k - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/K7/3k4/3r4/8/8/ w - 6 192
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/1K6/3k4/3r4/8/8/ b - 7 192
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/1K6/3k4/4r3/8/8/ w - 8 193
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - k - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/1K1k4/4r3/8/8/ b - 9 193
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - k r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/1K1kr3/8/8/8/ w - 10 194
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/1K6/3kr3/8/8/8/ b - 11 194
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - k - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/1K2k3/4r3/8/8/8/ w - 12 195
+
+- - - - - - - - 
+- - - - - - - - 
+K - - - k - - - 
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/K3k3/4r3/8/8/8/ b - 13 195
+
+- - - - - - - - 
+- - - - - - - - 
+K - - - k - - - 
+- - r - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/K3k3/2r5/8/8/8/ w - 14 196
+
+- - - - - - - - 
+K - - - - - - - 
+- - - - k - - - 
+- - r - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/K7/4k3/2r5/8/8/8/ b - 15 196
+
+- - - - - - - - 
+K - r - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/K1r5/4k3/8/8/8/8/ w - 16 197
+
+K - - - - - - - 
+- - r - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+K7/2r5/4k3/8/8/8/8/ b - 17 197
+
+K - - - - - - - 
+- - r - - - - - 
+- - - - - - - - 
+- - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+K7/2r5/8/5k2/8/8/8/ w - 18 198
+
+- K - - - - - - 
+- - r - - - - - 
+- - - - - - - - 
+- - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+1K6/2r5/8/5k2/8/8/8/ b - 19 198
+
+- K - - - - - - 
+- - r - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+1K6/2r5/8/4k3/8/8/8/ w - 20 199
+
+K - - - - - - - 
+- - r - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+K7/2r5/8/4k3/8/8/8/ b - 21 199
+
+K - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+K7/5r2/8/4k3/8/8/8/ w - 22 200
+
+- K - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+1K6/5r2/8/4k3/8/8/8/ b - 23 200
+
+- K - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+1K3r2/8/8/4k3/8/8/8/ w - 24 201
+
+- - - - - r - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/1K6/8/4k3/8/8/8/ b - 25 201
+
+- - - r - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/1K6/8/4k3/8/8/8/ w - 26 202
+
+- - - r - - - - 
+K - - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/K7/8/4k3/8/8/8/ b - 27 202
+
+- - - r - - - - 
+K - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/K7/4k3/8/8/8/8/ w - 28 203
+
+- - - r - - - - 
+- - - - - - - - 
+- K - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/8/1K2k3/8/8/8/8/ b - 29 203
+
+- - - r - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/8/1K6/4k3/8/8/8/ w - 30 204
+
+- - - r - - - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/8/K7/4k3/8/8/8/ b - 31 204
+
+- - - r - - - - 
+- - - - - - - - 
+K - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/8/K4k2/8/8/8/8/ w - 32 205
+
+- - - r - - - - 
+- K - - - - - - 
+- - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+3r4/1K6/5k2/8/8/8/8/ b - 33 205
+
+- - - - - - r - 
+- K - - - - - - 
+- - - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/1K6/5k2/8/8/8/8/ w - 34 206
+
+- - - - - - r - 
+- - - - - - - - 
+- K - - - k - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/8/1K3k2/8/8/8/8/ b - 35 206
+
+- - - - - - r - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/8/1K6/4k3/8/8/8/ w - 36 207
+
+- - - - - - r - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/1K6/8/4k3/8/8/8/ b - 37 207
+
+- - - - - - r - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/1K6/8/8/3k4/8/8/ w - 38 208
+
+- - - - - - r - 
+K - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/K7/8/8/3k4/8/8/ b - 39 208
+
+- - - - - r - - 
+K - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/K7/8/8/3k4/8/8/ w - 40 209
+
+- - - - - r - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/K7/8/3k4/8/8/ b - 41 209
+
+- - - - - r - - 
+- - - - - - - - 
+K - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/K7/2k5/8/8/8/ w - 42 210
+
+- - - - - r - - 
+- K - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/1K6/8/2k5/8/8/8/ b - 43 210
+
+- - - - - r - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/1K6/8/8/2k5/8/8/ w - 44 211
+
+- - - - - r - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/1K6/8/2k5/8/8/ b - 45 211
+
+- - - - - r - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/1K6/8/8/3k4/8/ w - 46 212
+
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/8/2K5/8/3k4/8/ b - 47 212
+
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+5r2/8/8/2K5/8/8/2k5/ w - 48 213
+
+- - - - - r - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+5r2/8/2K5/8/8/8/2k5/ b - 49 213
+
+- - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - r - - 
+8/8/2K5/8/8/8/2k5/5r w - 50 214
+
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - r - - 
+8/8/3K4/8/8/8/2k5/5r b - 51 214
+
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - r - - 
+8/8/3K4/8/8/8/3k4/5r w - 52 215
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - r - - 
+8/8/8/3K4/8/8/3k4/5r b - 53 215
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - r - - - - 
+8/8/8/3K4/8/8/3k4/3r w - 54 216
+
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - r - - - - 
+8/8/3K4/8/8/8/3k4/3r b - 55 216
+
+- - - - - - - - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - r - - - - 
+8/8/3K4/8/8/8/2k5/3r w - 56 217
+
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - r - - - - 
+8/2K5/8/8/8/8/2k5/3r b - 57 217
+
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - r - - - 
+8/2K5/8/8/8/8/2k5/4r w - 58 218
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - r - - - 
+8/8/1K6/8/8/8/2k5/4r b - 59 218
+
+- - - - - - - - 
+- - - - - - - - 
+- K - - r - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+8/8/1K2r3/8/8/8/2k5/ w - 60 219
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+8/8/4r3/1K6/8/8/2k5/ b - 61 219
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/4r3/1K6/8/8/3k4/ w - 62 220
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/4r3/8/1K6/8/3k4/ b - 63 220
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/3r4/8/1K6/8/3k4/ w - 64 221
+
+- - - - - - - - 
+- - - - - - - - 
+- - - r - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/3r4/8/8/1K6/3k4/ b - 65 221
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/5r2/8/8/1K6/3k4/ w - 66 222
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+8/8/5r2/8/8/K7/3k4/ b - 67 222
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+K - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/8/K1k5/8/ w - 68 223
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+K - - - - - - - 
+- - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/K7/2k5/8/ b - 69 223
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/K7/3k4/8/ w - 70 224
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/1K6/3k4/8/ b - 71 224
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- K - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/1K1k4/8/8/ w - 72 225
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+K - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/K2k4/8/8/ b - 73 225
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+K - k - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/K1k5/8/8/ w - 74 226
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - k - - - - - 
+K - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/2k5/K7/8/ b - 75 226
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - k - - - - 
+K - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/3k4/K7/8/ w - 76 227
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - r - - 
+- - - - - - - - 
+- - - k - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5r2/8/3k4/1K6/8/ b - 77 227
+
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/8/8/3k4/1K6/8/ w - 78 228
+
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/8/8/1K1k4/8/8/ b - 79 228
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- K - k - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/8/1K1k1r2/8/8/ w - 80 229
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - k - r - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/8/K7/3k1r2/8/8/ b - 81 229
+
+- - - - - r - - 
+- - - - - - - - 
+- - - - - - - - 
+K - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/8/K7/3k4/8/8/ w - 82 230
+
+- - - - - r - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+5r2/8/1K6/8/3k4/8/8/ b - 83 230
+
+r - - - - - - - 
+- - - - - - - - 
+- K - - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+r7/8/1K6/8/3k4/8/8/ w - 84 231
+
+r - - - - - - - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+r7/8/2K5/8/3k4/8/8/ b - 85 231
+
+- - - - - - r - 
+- - - - - - - - 
+- - K - - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/8/2K5/8/3k4/8/8/ w - 86 232
+
+- - - - - - r - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - k - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/8/3K4/8/3k4/8/8/ b - 87 232
+
+- - - - - - r - 
+- - - - - - - - 
+- - - K - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/8/3K4/8/4k3/8/8/ w - 88 233
+
+- - - - - - r - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+6r1/8/4K3/8/4k3/8/8/ b - 89 233
+
+- - - - r - - - 
+- - - - - - - - 
+- - - - K - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+4r3/8/4K3/8/4k3/8/8/ w - 90 234
+
+- - - - r - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+4r3/8/5K2/8/4k3/8/8/ b - 91 234
+
+- - - - - - - - 
+- - - - - - - - 
+- - - - - K - - 
+- - - - r - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/8/5K2/4r3/4k3/8/8/ w - 92 235
+
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - r - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+8/6K1/8/4r3/4k3/8/8/ b - 93 235
+
+- - - - r - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+4r3/6K1/8/8/4k3/8/8/ w - 94 236
+
+- - - - r - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+4r3/8/6K1/8/4k3/8/8/ b - 95 236
+
+r - - - - - - - 
+- - - - - - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+r7/8/6K1/8/4k3/8/8/ w - 96 237
+
+r - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - K 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+r7/8/8/7K/4k3/8/8/ b - 97 237
+
+- - - - - - - r 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - K 
+- - - - k - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+7r/8/8/7K/4k3/8/8/ w - 98 238
+
+- - - - - - - r 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - k - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+7r/8/8/8/4k1K1/8/8/ b - 99 238
+
+- - - - - - - r 
+- - - - - - - - 
+- - - - - - - - 
+- - - - k - - - 
+- - - - - - K - 
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+7r/8/8/4k3/6K1/8/8/ w - 100 239
+
