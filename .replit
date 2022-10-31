@@ -1,5 +1,5 @@
-compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* App"
+compile = "cd src; javac -d ../bin App.java"
+run = "java -classpath ./bin App"
 hidden = ["**/*.class"]
 
 [packager]
