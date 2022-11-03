@@ -46,7 +46,6 @@ public class Board extends JPanel {
     static boolean hasEnPassant = false;
     static int enPassantRank = -1;
     static int enPassantFile = -1;
-    static int preEnPasRank = -1, preEnPasFile = -1;
 
     static int halfmoves;
     static int tempHalfmoves = 0;
@@ -138,8 +137,6 @@ public class Board extends JPanel {
             sb.append("\n");
         }
         sb.append(Piece.outputFen(chessBoard, playerToMove) + "\n");
-        sb.append("Previous Rank: " + preEnPasRank + "\tPrevious File: " + preEnPasFile + "\n");
-        sb.append("Rank: " + enPassantRank + "\tFile: " + enPassantFile + "\n");
         sb.append("\n");
 
         try {
@@ -244,11 +241,7 @@ public class Board extends JPanel {
 
     public static int makeMove(int currentPiece, int currentRank, int currentFile, Move move) {
         int pieceColor = Piece.getPieceColor(currentPiece);
-        fullmoves += pieceColor == Piece.Black ? 1 : 0; 
-        if(move.flag == Flag.DOUBLE_PUSH) {
-            hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
-            getEnPassantLocation(currentPiece, move);
-        }
+        fullmoves += pieceColor == Piece.Black ? 1 : 0;
         if(move.flag == Flag.PROMOTION) {
             currentPiece = pieceColor | Piece.Q;
         }
@@ -278,11 +271,6 @@ public class Board extends JPanel {
     public static int unmakeMove(int currentPiece, int currentRank, int currentFile, Move move) {
         int pieceColor = Piece.getPieceColor(currentPiece);
         fullmoves += pieceColor == Piece.Black ? -1 : 0; 
-        if(move.flag == Flag.DOUBLE_PUSH) {
-            hasEnPassant = !(move.flag == Flag.DOUBLE_PUSH);
-            enPassantRank = preEnPasRank;
-            enPassantFile = preEnPasFile;
-        }
         if(move.flag == Flag.PROMOTION) {
             currentPiece = pieceColor | Piece.P;
         }
@@ -307,8 +295,6 @@ public class Board extends JPanel {
     }
 
     public static void getEnPassantLocation(int currentPiece, Move move) {
-        preEnPasRank = enPassantRank;
-        preEnPasFile = enPassantFile;
         if(hasEnPassant) {
             enPassantRank = move.getEndRank() + (Piece.getPieceColor(currentPiece) == Piece.Black ? -1 : 1);
             enPassantFile = move.getEndFile();
@@ -340,6 +326,8 @@ public class Board extends JPanel {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
                 Move move = currentAvailableMove.get(randomSelect);
                 makeMove(chessBoard[randRank][randFile], randRank, randFile, move);
+                hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
+                getEnPassantLocation(chessBoard[randRank][randFile], move);
                 currentAvailableMove = new ArrayList<>();
                 getMoveToHighlight(move);
             }
@@ -385,6 +373,8 @@ public class Board extends JPanel {
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.getEndRank() && movedFile == move.getEndFile()) {
                                 makeMove(currentPiece, selectedRank, selectedFile, move);
+                                hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
+                                getEnPassantLocation(currentPiece, move);
                                 getMoveToHighlight(move);
                                 if(checkForEndgame()) {
                                     getEndgame();
