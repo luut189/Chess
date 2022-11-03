@@ -42,11 +42,11 @@ public class Piece {
 
     public static Image getPiece(int piece) {
         if(piece == 0) {
-            return new ImageIcon("src/Pieces/None.png").getImage();
+            return new ImageIcon("./Pieces/None.png").getImage();
         } else {
             int pieceType = getPieceType(piece);
             String pieceColor = getPieceColor(piece) == Piece.White ? "W" : "B";
-            return new ImageIcon("src/Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
+            return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
         }
     }
 
@@ -106,7 +106,7 @@ public class Piece {
 
         if(!splitedFen[2].equals("-")) {
             Board.hasEnPassant = true;
-            Board.enPassantRank = Integer.parseInt(String.valueOf(splitedFen[2].charAt(1))) - 1;
+            Board.enPassantRank = Math.abs(8 - Integer.parseInt(String.valueOf(splitedFen[2].charAt(1))));
             Board.enPassantFile = (int) splitedFen[2].charAt(0) - 97;
         }
 
@@ -150,7 +150,7 @@ public class Piece {
 
         fen += " ";
         if(Board.hasEnPassant) {
-            fen += Character.toString((char) Board.enPassantFile+97) + String.valueOf(Board.enPassantRank+1);
+            fen += Character.toString((char) Board.enPassantFile+97) + Math.abs(Board.enPassantRank-8);
         } else {
             fen += "-";
         }
