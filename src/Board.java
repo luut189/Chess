@@ -87,7 +87,7 @@ public class Board extends JPanel {
         // }
 
         try {
-            output = new File("./output/match.txt");
+            output = new File(App.source + "/output/match.txt");
             output.createNewFile();
             fw = new FileWriter(output, false);
             bw = new BufferedWriter(fw);

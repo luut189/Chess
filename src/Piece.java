@@ -42,11 +42,11 @@ public class Piece {
 
     public static Image getPiece(int piece) {
         if(piece == 0) {
-            return new ImageIcon("./Pieces/None.png").getImage();
+            return new ImageIcon(App.source + "/Pieces/None.png").getImage();
         } else {
             int pieceType = getPieceType(piece);
             String pieceColor = getPieceColor(piece) == Piece.White ? "W" : "B";
-            return new ImageIcon("./Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
+            return new ImageIcon(App.source + "/Pieces/" + pieceColor + pieceTypes[pieceType] + ".png").getImage();
         }
     }
 
