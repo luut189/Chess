@@ -52,7 +52,7 @@ public class Board extends JPanel {
     static int fullmoves;
     
     boolean isComputer = true;
-    int delay = 100;
+    int delay = 0;
     
     boolean isPvP = true;
     boolean endGame = false;
@@ -127,17 +127,32 @@ public class Board extends JPanel {
     // debugging stuff
     public static void getBoard() {
         StringBuilder sb = new StringBuilder();
-        
+
+        sb.append("     ");
+        for(int i = 0;i < 8; i++) {
+            sb.append("= ");
+        }
+        sb.append("\n");
         for(int rank = 0; rank < 8; rank++) {
+            sb.append(Math.abs(rank-8) + "  | ");
             for(int file = 0; file < 8; file++) {
                 int pieceColor = Piece.getPieceColor(chessBoard[rank][file]);
                 String piece = Piece.pieceTypes[Piece.getPieceType(chessBoard[rank][file])];
                 boolean isWhite = pieceColor == Piece.White;
                 sb.append((isWhite ? piece : piece.toLowerCase()) + " ");
             }
-            sb.append("\n");
+            sb.append("|\n");
         }
-        sb.append(Piece.outputFen(chessBoard, playerToMove) + "\n");
+        sb.append("     ");
+        for(int i = 0;i < 8; i++) {
+            sb.append("= ");
+        }
+        sb.append("\n     ");
+        for(int i = 0; i < 8; i++) {
+            sb.append(Character.toString(i+97) + " ");
+        }
+        sb.append("\nFEN: " + Piece.outputFen(chessBoard, playerToMove) + "\n");
+        sb.append(enPassantRank + "\n");
         sb.append("\n");
 
         try {
@@ -326,9 +341,10 @@ public class Board extends JPanel {
             } else {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
                 Move move = currentAvailableMove.get(randomSelect);
-                makeMove(chessBoard[randRank][randFile], randRank, randFile, move);
+                int currentPiece = chessBoard[randRank][randFile];
+                makeMove(currentPiece, randRank, randFile, move);
                 hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
-                getEnPassantLocation(chessBoard[randRank][randFile], move);
+                getEnPassantLocation(currentPiece, move);
                 currentAvailableMove = new ArrayList<>();
                 getMoveToHighlight(move);
             }
