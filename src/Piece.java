@@ -5,17 +5,18 @@ import java.util.HashMap;
 import javax.swing.*;
 
 public class Piece {
-    /*
-     * 00 000 0
-     * 00 001 1
-     * 00 010 2
-     * 00 011 3
-     * 00 100 4
-     * 00 101 5
-     * 00 110 6
+
+    /* Example of pieces representations:
+     * 00 000 - 0 - None
+     * 00 001 - 1 - King
+     * 00 010 - 2 - Queen
+     * 00 011 - 3 - Rook
+     * 00 100 - 4 - Bishop
+     * 00 101 - 5 - Knight
+     * 00 110 - 6 - Pawn
      * 
-     * 01 000 8
-     * 10 000 16
+     * 01 000 - 8 - White
+     * 10 000 - 16 - Black
      */
 
     final static int None = 0;
@@ -31,15 +32,17 @@ public class Piece {
     final static int White = 8;
     final static int Black = 16;
 
+    // Binary mask used to decode the piece
     final static int typeMask = 0b00111;
     final static int colorMask = 0b11000;
 
+    // 2D array to store the pre-calculated data
     static int[][] numSquaresToEdge = new int[64][8];
 
-    static ArrayList<Move> pawnStartingPoint = new ArrayList<>();
-
+    // Store the current player to move
     static int playerToMove;
 
+    // Take in a piece and return an Image based on the piece
     public static Image getPiece(int piece) {
         if(piece == 0) {
             return new ImageIcon(App.source + "/Pieces/None.png").getImage();
@@ -50,31 +53,43 @@ public class Piece {
         }
     }
 
+    // Take in two pieces and return whether they are the same color or not
     public static boolean isColor(int piece, int targetPiece) {
         return (piece & colorMask) == (targetPiece & colorMask);
     }
 
+    // Take in a piece and return which piece that is (King, Queen, Knight,...)
     public static int getPieceType(int piece) {
         return piece & typeMask;
     }
 
+    // Take in a piece and return the color of that piece (Black, White)
     public static int getPieceColor(int piece) {
         return piece & colorMask;
     }
 
+    // Take in a piece and return if it is that piece's turn to move
     public static boolean isTurnToMove(int selectedPiece, int playerToMove) {
         return getPieceColor(selectedPiece) == playerToMove;
     }
 
+    // Return the current player to move
     public static int getPlayerToMove() {
         return playerToMove;
     }
 
+    // Take in two numbers for rank and file and return if they are in range
     public static boolean isInRange(int rank, int file) {
         return (rank >= 0 && rank < 8) && (file >= 0 && file < 8);
     }
 
+    /*
+     * Take in a FEN string and a 2D array to represent a chess board
+     * Decode the FEN string and put the information into the 2D array
+     */
     public static void inputFen(String fen, int[][] board) {
+
+        // A look up table for symbols to chess pieces
         HashMap<Character, Integer> symbolToPiece = new HashMap<>();
         symbolToPiece.put('k', Piece.K);
         symbolToPiece.put('q', Piece.Q);
@@ -84,9 +99,12 @@ public class Piece {
         symbolToPiece.put('p', Piece.P);
 
         int file = 0, rank = 0;
-        String splitedFen[] = fen.split(" ");
 
-        for(char symbol : splitedFen[0].toCharArray()) {
+        // Split the string into segments
+        String splittedFen[] = fen.split(" ");
+
+        // Put the pieces into the board
+        for(char symbol : splittedFen[0].toCharArray()) {
             if(symbol == '/') {
                 file = 0;
                 rank++;
@@ -102,20 +120,26 @@ public class Piece {
             }
         }
         
-        playerToMove = splitedFen[1].equals("w") ? Piece.White : Piece.Black;
+        // Get the player to move
+        playerToMove = splittedFen[1].equals("w") ? Piece.White : Piece.Black;
 
-        if(!splitedFen[2].equals("-")) {
+        // Get the En passant position if there is any
+        if(!splittedFen[2].equals("-")) {
             Board.hasEnPassant = true;
-            Board.enPassantRank = Math.abs(8 - Integer.parseInt(String.valueOf(splitedFen[2].charAt(1))));
-            Board.enPassantFile = (int) splitedFen[2].charAt(0) - 97;
+            Board.enPassantRank = Math.abs(8 - Integer.parseInt(String.valueOf(splittedFen[2].charAt(1))));
+            Board.enPassantFile = (int) splittedFen[2].charAt(0) - 97;
         }
 
-        Board.halfmoves = Integer.parseInt(splitedFen[3]);
-        Board.fullmoves = Integer.parseInt(splitedFen[4]);
+        // Get the halfmoves and fullmoves clock
+        Board.halfmoves = Integer.parseInt(splittedFen[3]);
+        Board.fullmoves = Integer.parseInt(splittedFen[4]);
     }
 
+    // Take in the board information and encode into a FEN string
     public static String outputFen(int[][] board, int playerToMove) {
         String fen = "";
+
+        // A look up table for pieces to symbols
         HashMap<Integer, Character> pieceToSymbol = new HashMap<>();
         pieceToSymbol.put(Piece.K, 'k');
         pieceToSymbol.put(Piece.Q, 'q');
@@ -124,6 +148,7 @@ public class Piece {
         pieceToSymbol.put(Piece.N, 'n');
         pieceToSymbol.put(Piece.P, 'p');
 
+        // Encode the pieces information of the board into FEN string
         int currentEmpty = 0;
         for(int rank = 0; rank < 8; rank++) {
             for(int file = 0; file < 8; file++) {
@@ -145,9 +170,12 @@ public class Piece {
                 }
             }
         }
+
+        // Encode the current player to move
         fen += " ";
         fen += playerToMove == Piece.White ? "w" : "b";
 
+        // Encode the En passant position if there is any
         fen += " ";
         if(Board.hasEnPassant) {
             fen += Character.toString((char) Board.enPassantFile+97) + Math.abs(Board.enPassantRank-8);
@@ -155,11 +183,13 @@ public class Piece {
             fen += "-";
         }
 
+        // Encode the halfmoves and fullmoves clock
         fen += " " + Board.halfmoves + " " + Board.fullmoves;
 
         return fen;
     }
 
+    // Calculate the amount of squares from each square to the edges
     public static void computeData() {
         for(int rank = 0; rank < 8; rank++) {
             for(int file = 0; file < 8; file++) {

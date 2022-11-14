@@ -2,35 +2,53 @@ import java.util.ArrayList;
 
 public class Move {
 
+    // Properties of a Move
     int startPosition;
     int targetPosition;
     Flag flag;
 
-    static final int rankMask = 0b11110000;
-    static final int fileMask = 0b00001111;
+    // Binary mask for decoding move's position (Rank and File)
+    final int rankMask = 0b11110000;
+    final int fileMask = 0b00001111;
     
+    // Constructor for a Move (X is Rank and Y is File)
     Move(int startX, int startY, int endX, int endY, Flag flag) {
+        
+        /*
+         * Shifting X by 4 bits and do bitwise OR with Y
+         * A crappy example:
+         *      X is 7 - 0b0111
+         *      Y is 2 - 0b0010
+         * 
+         *      X << 4 = 0b01110000
+         *      (X << 4) | Y = 0b01110010
+         */
         startPosition = (startX << 4) | startY;
         targetPosition = (endX << 4) | endY;
         this.flag = flag;
     }
 
+    // Getter for start position's rank
     public int getStartRank() {
         return (startPosition & rankMask) >> 4;
     }
 
+    // Getter for start position's file
     public int getStartFile() {
         return startPosition & fileMask;
     }
 
+    // Getter for target position's rank
     public int getEndRank() {
         return (targetPosition & rankMask) >> 4;
     }
 
+    // Getter for target position's file
     public int getEndFile() {
         return targetPosition & fileMask;
     }
     
+    // Constant for sliding pieces' movement
     final static int[] possibleSlidingDir = {
         // rook
         -8, // up
@@ -45,6 +63,7 @@ public class Move {
         9   // down right
     };
 
+    // Constant for king's movement
     final static int[][] possibleKingDir = {
         {-1, 0},
         {1, 0},
@@ -57,6 +76,7 @@ public class Move {
         {1, 1}
     };
 
+    // Constant for knight's movement
     final static int[][] possibleKnightDir = {
         // up
         {-2, -1}, // up 2 left
@@ -71,6 +91,7 @@ public class Move {
         {2, 1}   // down 2 right
     };
     
+    // Constant for pawn's movement
     final static int[][] possiblePawnDir = {
         // white
         {-1, -1}, // capture piece left
@@ -85,6 +106,10 @@ public class Move {
         {2, 0},  // double push
     };
 
+    /*
+     * Take in the chess board and the current player
+     * Return the position of the current player's king
+     */
     public static int[] getKingSquare(int[][] board, int currentPlayer) {
         int[] kingSquare = new int[2];
 
@@ -100,6 +125,10 @@ public class Move {
         return kingSquare;
     }
 
+    /*
+     * Take in the moves list and the king's position
+     * Return if there is any move that can capture the king
+     */
     public static boolean checkIllegal(ArrayList<Move> response, int[] kingSquare) {
         for(Move move : response) {
             if(move.getEndRank() == kingSquare[0] && move.getEndFile() == kingSquare[1]) {

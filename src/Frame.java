@@ -1,6 +1,8 @@
 import javax.swing.JFrame;
 
 public class Frame extends JFrame {
+
+    // Simple setup for the JFrame
     Frame(String title) {
         Board board = new Board(400, 400);
 
