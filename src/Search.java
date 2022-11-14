@@ -18,9 +18,9 @@ public class Search {
             int startRank = move.getStartRank();
             int startFile = move.getStartFile();
             int piece = Board.chessBoard[startRank][startFile];
-            Board.playerToMove = Board.makeMove(piece, startRank, startFile, move);
+            Board.playerToMove = Board.makeMove(piece, move);
             sum += searchMove(depth-1);
-            Board.playerToMove = Board.unmakeMove(piece, startRank, startFile, move);
+            Board.playerToMove = Board.unmakeMove(piece, move);
         }
 
         return sum;
