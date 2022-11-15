@@ -47,11 +47,14 @@ public class Board extends JPanel {
     static int enPassantRank = -1;
     static int enPassantFile = -1;
 
+    static int previousEPRank = -1;
+    static int previousEPFile = -1;
+
     static int halfmoves;
     static int tempHalfmoves = 0;
     static int fullmoves;
     
-    boolean isComputer = false;
+    boolean isComputer = true;
     int delay = 0;
     
     boolean isPvP = true;
@@ -68,6 +71,8 @@ public class Board extends JPanel {
     static File output;
     static FileWriter fw;
     static BufferedWriter bw;
+
+    static int numOfMoves = 0;
 
     Board(int width, int height) {
         chessBoard = new int[8][8];
@@ -94,9 +99,11 @@ public class Board extends JPanel {
             e.printStackTrace();
         }
 
-        // for(int i = 1; i <= 6; i++) {
-        //     System.out.println(Search.searchMove(i));
-        // }
+        /* Code for searching legal move (Currently work with 2 ply)
+        for(int i = 1; i <= 6; i++) {
+            System.out.println(Search.searchMove(i));
+        }
+        */
         
         if(isComputer) {
             new Timer(delay, new ActionListener() {
@@ -128,6 +135,7 @@ public class Board extends JPanel {
     public static void getBoard() {
         StringBuilder sb = new StringBuilder();
 
+        sb.append("Move No." + numOfMoves + "\n");
         sb.append("     ");
         for(int i = 0;i < 8; i++) {
             sb.append("= ");
@@ -158,6 +166,7 @@ public class Board extends JPanel {
             bw = new BufferedWriter(fw);
             bw.write(sb.toString());
             bw.close();
+            numOfMoves++;
         } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
@@ -256,6 +265,7 @@ public class Board extends JPanel {
     public static int makeMove(int currentPiece, Move move) {
         int pieceColor = Piece.getPieceColor(currentPiece);
         fullmoves += pieceColor == Piece.Black ? 1 : 0;
+        getEnPassantLocation(currentPiece, move);
         if(move.flag == Flag.PROMOTION) {
             currentPiece = pieceColor | Piece.Q;
         }
@@ -284,7 +294,9 @@ public class Board extends JPanel {
 
     public static int unmakeMove(int currentPiece, Move move) {
         int pieceColor = Piece.getPieceColor(currentPiece);
-        fullmoves += pieceColor == Piece.Black ? -1 : 0; 
+        fullmoves += pieceColor == Piece.Black ? -1 : 0;
+        enPassantRank = previousEPRank;
+        enPassantFile = previousEPFile;
         if(move.flag == Flag.PROMOTION) {
             currentPiece = pieceColor | Piece.P;
         }
@@ -309,6 +321,8 @@ public class Board extends JPanel {
     }
 
     public static void getEnPassantLocation(int currentPiece, Move move) {
+        previousEPRank = enPassantRank;
+        previousEPFile = enPassantFile;
         if(hasEnPassant) {
             enPassantRank = move.getEndRank() + (Piece.getPieceColor(currentPiece) == Piece.Black ? -1 : 1);
             enPassantFile = move.getEndFile();
@@ -340,9 +354,9 @@ public class Board extends JPanel {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
                 Move move = currentAvailableMove.get(randomSelect);
                 int currentPiece = chessBoard[randRank][randFile];
-                makeMove(currentPiece, move);
                 hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
-                getEnPassantLocation(currentPiece, move);
+                makeMove(currentPiece, move);
+                if(move.flag == Flag.EN_PASSANT) System.out.println("en passant at " + numOfMoves);
                 currentAvailableMove = new ArrayList<>();
                 getMoveToHighlight(move);
             }
@@ -387,8 +401,8 @@ public class Board extends JPanel {
                     if(!Piece.isColor(currentPiece, targetPiece)) {
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.getEndRank() && movedFile == move.getEndFile()) {
-                                makeMove(currentPiece, move);
                                 hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
+                                makeMove(currentPiece, move);
                                 getEnPassantLocation(currentPiece, move);
                                 getMoveToHighlight(move);
                                 if(checkForEndgame()) {
@@ -397,8 +411,6 @@ public class Board extends JPanel {
                                 } else {
                                     if(!isPvP) randomMove();
                                 }
-                                // to print out FEN string for every move
-                                //System.out.println(Piece.outputFen(chessBoard, playerToMove));
                                 break;
                             }
                         }
