@@ -356,7 +356,10 @@ public class Board extends JPanel {
                 int currentPiece = chessBoard[randRank][randFile];
                 hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
                 makeMove(currentPiece, move);
+
+                // to print when there is an en passant move made by the computer
                 if(move.flag == Flag.EN_PASSANT) System.out.println("en passant at " + numOfMoves);
+
                 currentAvailableMove = new ArrayList<>();
                 getMoveToHighlight(move);
             }
@@ -403,7 +406,6 @@ public class Board extends JPanel {
                             if(movedRank == move.getEndRank() && movedFile == move.getEndFile()) {
                                 hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
                                 makeMove(currentPiece, move);
-                                getEnPassantLocation(currentPiece, move);
                                 getMoveToHighlight(move);
                                 if(checkForEndgame()) {
                                     getEndgame();
