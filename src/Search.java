@@ -6,11 +6,8 @@ public class Search {
         ArrayList<Move> moves = new ArrayList<>();
         if(depth == 0) return 1;
 
-        for(int rank = 0; rank < 8; rank++) {
-            for(int file = 0; file < 8; file++) {
-                moves.addAll(0, Move.generateMove(Board.chessBoard, Board.chessBoard[rank][file], rank, file, Board.playerToMove));
-            }
-        }
+        moves = Move.generateAllPossibleMove(Board.chessBoard, Board.playerToMove);
+        if(moves.size() == 0) return 0;
 
         int sum = 0;
 
@@ -18,9 +15,17 @@ public class Search {
             int startRank = move.getStartRank();
             int startFile = move.getStartFile();
             int piece = Board.chessBoard[startRank][startFile];
-            Board.playerToMove = Board.makeMove(piece, move);
-            sum += searchMove(depth-1);
-            Board.playerToMove = Board.unmakeMove(piece, move);
+            if(move.flag == Flag.PROMOTION) {
+                for(int i = 2; i <= 5; i++) {
+                    Board.playerToMove = Board.makeMove(piece, move, i);
+                    sum += searchMove(depth-1);
+                    Board.playerToMove = Board.unmakeMove(piece, move);
+                }
+            } else {
+                Board.playerToMove = Board.makeMove(piece, move, 0);
+                sum += searchMove(depth-1);
+                Board.playerToMove = Board.unmakeMove(piece, move);
+            }
         }
 
         return sum;

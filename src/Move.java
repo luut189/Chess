@@ -145,10 +145,10 @@ public class Move {
         int[] kingSquare = getKingSquare(board, currentPlayer);
         for(Move move : pseudoLegalMove) {
             if(currentRank == kingSquare[0] && currentFile == kingSquare[1]) {
-                Board.makeMove(piece, move);
+                Board.makeMove(piece, move, 0);
                 kingSquare = getKingSquare(board, currentPlayer);
                 Board.unmakeMove(piece, move);
-                currentPlayer = Board.makeMove(piece, move);
+                currentPlayer = Board.makeMove(piece, move, 0);
                 ArrayList<Move> opponentResponse = generateAllPossibleMove(board, currentPlayer);
                 if(!checkIllegal(opponentResponse, kingSquare)) {   
                     legalMove.add(move);
@@ -156,7 +156,7 @@ public class Move {
                 currentPlayer = Board.unmakeMove(board[move.getEndRank()][move.getEndFile()], move);
                 kingSquare = getKingSquare(board, currentPlayer);
             } else {
-                currentPlayer = Board.makeMove(piece, move);
+                currentPlayer = Board.makeMove(piece, move, 0);
                 ArrayList<Move> opponentResponse = generateAllPossibleMove(board, currentPlayer);
                 if(!checkIllegal(opponentResponse, kingSquare)) {   
                     legalMove.add(move);
