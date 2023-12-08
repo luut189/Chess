@@ -10,6 +10,7 @@ import java.awt.event.MouseAdapter;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Stack;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
@@ -31,7 +32,8 @@ public class Board extends JPanel {
 
     int selectedRank = -1, selectedFile = -1;
     int movedRank = -1, movedFile = -1;
-    int promotionRank = -10, promotionFile = -10;
+    int promotionRank = -1, promotionFile = -1;
+    int hovering = -1;
     boolean hasSelected = false;
 
     boolean choosingPromotion = false;
@@ -45,21 +47,24 @@ public class Board extends JPanel {
     static int chessBoard[][];
     static int currentTurn, playerToMove;
 
+    static Stack<Boolean> preHasCaptured = new Stack<>();
     static boolean hasCaptured = false;
+    static Stack<Integer> preCapturedPiece = new Stack<>();
     static int capturedPiece = Piece.None;
 
     static boolean hasEnPassant = false;
     static int enPassantRank = -1;
     static int enPassantFile = -1;
 
-    static int previousEPRank = -1;
-    static int previousEPFile = -1;
+    static Stack<Boolean> preHasEnPassant = new Stack<>();
+    static Stack<Integer> previousEPRank = new Stack<>();
+    static Stack<Integer> previousEPFile = new Stack<>();
 
     static int halfmoves;
-    static int tempHalfmoves = 0;
+    static Stack<Integer> preHalfmoves = new Stack<>();
     static int fullmoves;
     
-    boolean isComputer = false;
+    boolean isComputer = true;
     int delay = 0;
     
     boolean isPvP = true;
@@ -69,7 +74,7 @@ public class Board extends JPanel {
     ArrayList<Move> allPossibleMove = new ArrayList<>();
     
     String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - 0 1";
-    String testFen = "8/7k/1N6/pP6/8/8/8/8 w a6 0 1";
+    String testFen = "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - 1 1";
 
     Random rand = new Random();
 
@@ -78,7 +83,7 @@ public class Board extends JPanel {
     static BufferedWriter bw;
 
     static int numOfMoves = 0;
-    int depth = 0;
+    int depth = 1;
     Board(int width, int height) {
         chessBoard = new int[8][8];
         this.width = width;
@@ -87,6 +92,7 @@ public class Board extends JPanel {
 
         this.setPreferredSize(new Dimension(width, height));
         this.addMouseListener(new mouseAdapter());
+        this.addMouseMotionListener(new mouseAdapter());
 
         Piece.inputFen(startFen, chessBoard);
         playerToMove = Piece.getPlayerToMove();
@@ -122,6 +128,7 @@ public class Board extends JPanel {
                     // } else {
                     //     randomMove();
                     // }
+                    // repaint();
                     System.out.println(Search.searchMove(depth));
                     repaint();
                     depth++;
@@ -242,6 +249,10 @@ public class Board extends JPanel {
         for(int i = 0; i <= 3; i++) {
             g.setColor(Color.white);
             g.fillRect(promotionFile*size, (promotionRank+i*side)*size, size, size);
+        }
+        g.setColor(new Color(119, 204, 131, 75));
+        g.fillRect(promotionFile*size, hovering*size, size, size);
+        for(int i = 0; i <= 3; i++) {
             g.drawImage(Piece.getPiece(pieces[i]), promotionFile*size, (promotionRank+i*side)*size, size, size, null);
         }
         Graphics2D g2d = (Graphics2D) g;
@@ -285,8 +296,11 @@ public class Board extends JPanel {
     }
 
     public static int makeMove(int currentPiece, Move move, int promotionValue) {
+        preHasCaptured.add(hasCaptured);
         int pieceColor = Piece.getPieceColor(currentPiece);
         fullmoves += pieceColor == Piece.Black ? 1 : 0;
+        preHasEnPassant.add(hasEnPassant);
+        hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
         getEnPassantLocation(currentPiece, move);
         if(move.flag == Flag.PROMOTION) {
             currentPiece = pieceColor | promotionValue;
@@ -294,18 +308,20 @@ public class Board extends JPanel {
         if(move.flag == Flag.EN_PASSANT) {
             int enPassantOffset = pieceColor == Piece.White ? 1 : -1;
             hasCaptured = true;
+            preCapturedPiece.add(capturedPiece);
             capturedPiece = chessBoard[move.getEndRank()+enPassantOffset][move.getEndFile()];
             chessBoard[move.getEndRank()][move.getEndFile()] = currentPiece;
             chessBoard[move.getEndRank()+enPassantOffset][move.getEndFile()] = Piece.None;
             chessBoard[move.getStartRank()][move.getStartFile()] = Piece.None;
         } else {
             hasCaptured = chessBoard[move.getEndRank()][move.getEndFile()] != Piece.None;
-            capturedPiece = hasCaptured ? chessBoard[move.getEndRank()][move.getEndFile()] : Piece.None;
+            preCapturedPiece.add(capturedPiece);
+            capturedPiece = chessBoard[move.getEndRank()][move.getEndFile()];
             chessBoard[move.getEndRank()][move.getEndFile()] = currentPiece;
             chessBoard[move.getStartRank()][move.getStartFile()] = Piece.None;
         }
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
-            tempHalfmoves = halfmoves;
+            preHalfmoves.add(halfmoves);
             halfmoves = 0;
         }
         halfmoves += hasCaptured || Piece.getPieceType(currentPiece) == Piece.P ? 0 : 1;
@@ -317,8 +333,6 @@ public class Board extends JPanel {
     public static int unmakeMove(int currentPiece, Move move) {
         int pieceColor = Piece.getPieceColor(currentPiece);
         fullmoves += pieceColor == Piece.Black ? -1 : 0;
-        enPassantRank = previousEPRank;
-        enPassantFile = previousEPFile;
         if(move.flag == Flag.PROMOTION) {
             currentPiece = pieceColor | Piece.P;
         }
@@ -327,25 +341,29 @@ public class Board extends JPanel {
             chessBoard[move.getEndRank()+enPassantOffset][move.getEndFile()] = capturedPiece;
             chessBoard[move.getStartRank()][move.getStartFile()] = currentPiece;
             chessBoard[move.getEndRank()][move.getEndFile()] = Piece.None;
+            capturedPiece = preCapturedPiece.pop();
         } else {
             chessBoard[move.getStartRank()][move.getStartFile()] = currentPiece;
             chessBoard[move.getEndRank()][move.getEndFile()] = hasCaptured ? capturedPiece : Piece.None;
+            capturedPiece = preCapturedPiece.pop();
         }
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
-            halfmoves = tempHalfmoves;
-            tempHalfmoves = 0;
+            halfmoves = preHalfmoves.pop();
         } else {
             halfmoves--;
         }
-        hasCaptured = false;
+        hasCaptured = preHasCaptured.pop();
+        hasEnPassant = preHasEnPassant.pop();
+        enPassantRank = previousEPRank.pop();
+        enPassantFile = previousEPFile.pop();
         currentTurn--;
         getCurrentTurn();
         return playerToMove;
     }
 
     public static void getEnPassantLocation(int currentPiece, Move move) {
-        previousEPRank = enPassantRank;
-        previousEPFile = enPassantFile;
+        previousEPRank.add(enPassantRank);
+        previousEPFile.add(enPassantFile);
         if(hasEnPassant) {
             enPassantRank = move.getEndRank() + (Piece.getPieceColor(currentPiece) == Piece.Black ? -1 : 1);
             enPassantFile = move.getEndFile();
@@ -377,7 +395,6 @@ public class Board extends JPanel {
                 int randomSelect = rand.nextInt(currentAvailableMove.size());
                 Move move = currentAvailableMove.get(randomSelect);
                 int currentPiece = chessBoard[randRank][randFile];
-                hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
                 makeMove(currentPiece, move, rand.nextInt(6-2) + 2);
 
                 // to print when there is an en passant move made by the computer
@@ -398,7 +415,7 @@ public class Board extends JPanel {
         System.out.println(halfmoves == MAX_MOVE ? "stalemate" : (playerToMove == Piece.White ? "black" : "white") + " checkmate");
         endGame = true;
         halfmoves = 0;
-        tempHalfmoves = 0;
+        preHalfmoves = new Stack<>();
         deselectPiece();
     }
 
@@ -429,7 +446,6 @@ public class Board extends JPanel {
                         promotionValue = e.getY()/size+2;
                     } else {
                         promotionValue = -(e.getY()/size)+9;
-                        System.out.println(promotionValue);
                     }
                     choosingPromotion = false;
                     makeMove(choosenPiece, choosenMove, promotionValue);
@@ -442,6 +458,8 @@ public class Board extends JPanel {
                     }
                     choosenMove = null;
                     choosenPiece = Piece.None;
+                    repaint();
+                    return;
                 }
                 if(hasSelected && chessBoard[selectedRank][selectedFile] != Piece.None && Piece.isTurnToMove(chessBoard[selectedRank][selectedFile], playerToMove)) {
                     movedRank = e.getY()/size;
@@ -451,7 +469,6 @@ public class Board extends JPanel {
                     if(!Piece.isColor(currentPiece, targetPiece)){
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.getEndRank() && movedFile == move.getEndFile()) {
-                                hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
                                 if(move.flag == Flag.PROMOTION) {
                                     promotionRank = movedRank;
                                     promotionFile = movedFile;
@@ -497,5 +514,19 @@ public class Board extends JPanel {
                 deselectPiece();
             }
         }
+
+        @Override
+        public void mouseMoved(MouseEvent e) {
+            if(choosingPromotion) {
+                int lowerBound = playerToMove == Piece.White ? 0 : 4;
+                int upperBound = playerToMove == Piece.White ? 3 : 7;
+                
+                if(e.getX()/size != choosenMove.getEndFile()) return;
+                if(e.getY()/size < lowerBound || e.getY()/size > upperBound) return;
+                hovering = e.getY()/size;
+                repaint();
+            }
+        }
+        
     }
 }

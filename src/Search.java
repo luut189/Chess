@@ -4,11 +4,13 @@ public class Search {
     
     public static int searchMove(int depth) {
         ArrayList<Move> moves = new ArrayList<>();
-        if(depth == 0) return 1;
 
-        moves = Move.generateAllPossibleMove(Board.chessBoard, Board.playerToMove);
-        if(moves.size() == 0) return 0;
-
+        for(int rank = 0; rank < 8; rank++) {
+            for(int file = 0; file < 8; file++) {
+                moves.addAll(0, Move.generateMove(Board.chessBoard, Board.chessBoard[rank][file], rank, file, Board.playerToMove));
+            }
+        }
+        if(depth == 1) return moves.size();
         int sum = 0;
 
         for(Move move : moves) {
