@@ -2,7 +2,9 @@
 
 public enum Flag {
     NONE,
+    CAPTURE,
     DOUBLE_PUSH,
     EN_PASSANT,
-    PROMOTION
+    PROMOTION,
+    PROMOTION_CAPTURE
 }

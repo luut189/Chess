@@ -64,17 +64,17 @@ public class Board extends JPanel {
     static Stack<Integer> preHalfmoves = new Stack<>();
     static int fullmoves;
     
-    boolean isComputer = true;
+    boolean isComputer = false;
     int delay = 0;
     
-    boolean isPvP = true;
+    boolean isPvP = false;
     boolean endGame = false;
 
     ArrayList<Move> currentAvailableMove = new ArrayList<>();
     ArrayList<Move> allPossibleMove = new ArrayList<>();
     
     String startFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - 0 1";
-    String testFen = "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - 1 1";
+    String testFen = "8/2b5/1r6/4K3/8/8/8/8 w - 0 1";
 
     Random rand = new Random();
 
@@ -84,6 +84,9 @@ public class Board extends JPanel {
 
     static int numOfMoves = 0;
     int depth = 1;
+
+    int[][] currentAttackedSquare = new int[8][8];
+
     Board(int width, int height) {
         chessBoard = new int[8][8];
         this.width = width;
@@ -120,18 +123,21 @@ public class Board extends JPanel {
             new Timer(delay, new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    // getBoard();
-                    // if(checkForEndgame()) {
-                    //     getEndgame();
-                    //     repaint();
-                    //     ((Timer) e.getSource()).stop();
-                    // } else {
-                    //     randomMove();
-                    // }
-                    // repaint();
-                    System.out.println(Search.searchMove(depth));
+                    getBoard();
+                    if(checkForEndgame()) {
+                        getEndgame();
+                        repaint();
+                        ((Timer) e.getSource()).stop();
+                    } else {
+                        Move botMove = Search.getMove();
+                        int botRank = botMove.getStartRank();
+                        int botFile = botMove.getStartFile();
+                        makeMove(chessBoard[botRank][botFile], botMove, 2);
+                    }
                     repaint();
-                    depth++;
+                    // System.out.println(Search.searchMove(depth));
+                    // repaint();
+                    // depth++;
                 }
             }).start();
         }
@@ -267,6 +273,15 @@ public class Board extends JPanel {
         drawSelected(g);
         drawMovable(g);
         highlightMove(g);
+        // currentAttackedSquare = Move.getKingRay(chessBoard, playerToMove)[0];
+        // g.setColor(new Color(214, 66, 204, 75));
+        // for(int rank = 0; rank < 8; rank++) {
+        //     for(int file = 0; file < 8; file++) {
+        //         if(currentAttackedSquare[rank][file] != 0) {
+        //             g.fillRect(file*size, rank*size, size, size);
+        //         }
+        //     }
+        // }
         drawPieces(g);
         if(choosingPromotion) drawPromotion(g);
     }
@@ -302,7 +317,7 @@ public class Board extends JPanel {
         preHasEnPassant.add(hasEnPassant);
         hasEnPassant = move.flag == Flag.DOUBLE_PUSH;
         getEnPassantLocation(currentPiece, move);
-        if(move.flag == Flag.PROMOTION) {
+        if(move.flag == Flag.PROMOTION || move.flag == Flag.PROMOTION_CAPTURE) {
             currentPiece = pieceColor | promotionValue;
         }
         if(move.flag == Flag.EN_PASSANT) {
@@ -333,7 +348,7 @@ public class Board extends JPanel {
     public static int unmakeMove(int currentPiece, Move move) {
         int pieceColor = Piece.getPieceColor(currentPiece);
         fullmoves += pieceColor == Piece.Black ? -1 : 0;
-        if(move.flag == Flag.PROMOTION) {
+        if(move.flag == Flag.PROMOTION || move.flag == Flag.PROMOTION_CAPTURE) {
             currentPiece = pieceColor | Piece.P;
         }
         if(move.flag == Flag.EN_PASSANT) {
@@ -348,7 +363,7 @@ public class Board extends JPanel {
             capturedPiece = preCapturedPiece.pop();
         }
         if(hasCaptured || Piece.getPieceType(currentPiece) == Piece.P) {
-            halfmoves = preHalfmoves.pop();
+            if(!preHalfmoves.empty()) halfmoves = preHalfmoves.pop();
         } else {
             halfmoves--;
         }
@@ -454,7 +469,12 @@ public class Board extends JPanel {
                         getEndgame();
                         repaint();
                     } else {
-                        if(!isPvP) randomMove();
+                        if(!isPvP) {
+                            Move botMove = Search.getMove();
+                            int botRank = botMove.getStartRank();
+                            int botFile = botMove.getStartFile();
+                            makeMove(chessBoard[botRank][botFile], botMove, 2);
+                        }
                     }
                     choosenMove = null;
                     choosenPiece = Piece.None;
@@ -469,7 +489,7 @@ public class Board extends JPanel {
                     if(!Piece.isColor(currentPiece, targetPiece)){
                         for(Move move : currentAvailableMove) {
                             if(movedRank == move.getEndRank() && movedFile == move.getEndFile()) {
-                                if(move.flag == Flag.PROMOTION) {
+                                if(move.flag == Flag.PROMOTION || move.flag == Flag.PROMOTION_CAPTURE) {
                                     promotionRank = movedRank;
                                     promotionFile = movedFile;
                                     choosingPromotion = true;
@@ -487,7 +507,16 @@ public class Board extends JPanel {
                                     getEndgame();
                                     repaint();
                                 } else {
-                                    if(!isPvP) randomMove();
+                                    if(!isPvP) {
+                                        Move botMove = Search.getMove();
+                                        int botRank = botMove.getStartRank();
+                                        int botFile = botMove.getStartFile();
+                                        makeMove(chessBoard[botRank][botFile], botMove, 2);
+                                        if(checkForEndgame()) {
+                                            getEndgame();
+                                            repaint();
+                                        }
+                                    }
                                 }
                                 break;
                             }

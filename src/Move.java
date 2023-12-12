@@ -138,9 +138,144 @@ public class Move {
         return false;
     }
 
+    // function in work
+    public static int[][][] getKingRay(int[][] board, int currentPlayer) {
+        int num = 0;
+        int opponent = currentPlayer == Piece.White ? Piece.Black : Piece.White;
+        int[][] defendMap = new int[8][8];
+        int[][] attackMap = new int[8][8];
+        for(int i = 0; i < 8; i++) {
+            for(int j = 0; j < 8; j++) {
+                attackMap[i][j] = 0;
+                defendMap[i][j] = 0;
+            }
+        }
+        int[] kingSquare = getKingSquare(board, currentPlayer);
+        ArrayList<Move> opponentMove = generateAllPossibleMove(board, opponent);
+        int firstRank = opponentMove.get(0).getStartRank();
+        int firstFile = opponentMove.get(0).getStartFile();
+
+        int lastPiece = board[firstRank][firstFile];
+        
+        for(Move move : opponentMove) {
+            int startRank = move.getStartRank();
+            int startFile = move.getStartFile();
+            int endRank = move.getEndRank();
+            int endFile = move.getEndFile();
+
+            int pieceType = Piece.getPieceType(board[move.getStartRank()][move.getStartFile()]);
+
+            if(lastPiece != pieceType) num++;
+
+            lastPiece = pieceType;
+            defendMap[startRank][startFile] = num;
+
+            boolean isQueen = pieceType == Piece.Q;
+            boolean isRook = pieceType == Piece.R;
+            boolean isBishop = pieceType == Piece.B;
+            boolean isSlidingPiece =  isQueen || isRook || isBishop;
+
+            int distStartRank = Math.abs(move.getStartRank() - kingSquare[0]);
+            int distStartFile = Math.abs(move.getStartFile() - kingSquare[1]);
+            int distEndRank = Math.abs(move.getEndRank() - kingSquare[0]);
+            int distEndFile = Math.abs(move.getEndFile() - kingSquare[1]);
+            // if(
+            //     isQueen &&
+            //     (distEndRank <= distStartRank ||
+            //     distEndFile <= distStartFile)
+            // ) {
+            //     kingRay.add(move);
+            //     continue;
+            // }
+            if(
+                (isRook || isQueen) &&
+                ((move.getStartRank() == kingSquare[0] && distEndFile < distStartFile) ||
+                (move.getStartFile() == kingSquare[1] && distEndRank < distStartRank))
+            ) {
+                attackMap[endRank][endFile] = num;
+                if(move.getStartRank() == kingSquare[0]) {
+                    int extra = move.getStartFile() < move.getEndFile() ? 1 : -1;
+                    if(Piece.isInRange(endRank, endFile+extra)) {
+                        attackMap[endRank][endFile+extra] = num;
+                    }
+                }
+                if(move.getStartFile() == kingSquare[1]) {
+                    int extra = move.getStartRank() < move.getEndRank() ? 1 : -1;
+                    if(Piece.isInRange(endRank+extra, endFile)) {
+                        attackMap[endRank+extra][endFile] = num;
+                    }
+                }
+            }
+
+            if(
+                (isBishop || isQueen) &&
+                distStartRank == distStartFile &&
+                distEndFile < distStartFile &&
+                distEndRank < distStartRank
+            ) {
+                attackMap[endRank][endFile] = num;
+                int extraRank = move.getStartRank() < move.getEndRank() ? 1 : -1;
+                int extraFile = move.getStartFile() < move.getEndFile() ? 1 : -1;
+                if(Piece.isInRange(endRank+extraRank, endFile+extraFile)) {
+                    attackMap[endRank+extraRank][endFile+extraFile] = num;
+                }
+            }
+
+            if(!isSlidingPiece && move.getEndRank() == kingSquare[0] && move.getEndFile() == kingSquare[1] && move.flag == Flag.CAPTURE) {
+                attackMap[endRank][endFile] = num;
+            }
+        }
+        return new int[][][] {attackMap, defendMap};
+    }
+
+    public static boolean underAttack(int[][] attackMap) {
+        for(int i = 0; i < 8; i++) {
+            for(int j = 0; j < 8; j++) {
+                if(attackMap[i][j] != 0) return true;
+            }
+        }
+        return false;
+    }
+
     public static ArrayList<Move> generateMove(int[][] board, int piece, int currentRank, int currentFile, int currentPlayer) {
         ArrayList<Move> pseudoLegalMove = generatePseudoLegalMove(board, piece, currentRank, currentFile, currentPlayer);
         ArrayList<Move> legalMove = new ArrayList<>();
+
+        // Working on this
+        // int[][][] attackDefendMap = getKingRay(board, currentPlayer);
+        // int[][] attackMap = attackDefendMap[0];
+        // int[][] defendMap = attackDefendMap[1];
+        
+        // System.out.println("Attack Map:");
+        // for(int i = 0; i < 8; i++) {
+        //     for(int j = 0; j < 8; j++) {
+        //         System.out.print(attackMap[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println();
+        
+        // if(underAttack(attackMap)) {
+        //     for(Move move : pseudoLegalMove) {
+        //         int startRank = move.getStartRank();
+        //         int startFile = move.getStartFile();
+        //         int endRank = move.getEndRank();
+        //         int endFile = move.getEndFile();
+
+        //         int pieceToMove = board[startRank][startFile];
+        //         int pieceType = Piece.getPieceType(pieceToMove);
+                
+        //         if(pieceType != Piece.K && defendMap[endRank][endFile] != 0) legalMove.add(move);
+        //         if(pieceType == Piece.K) {
+        //             if(attackMap[endRank][endFile] == 0) legalMove.add(move);
+        //         } else if(attackMap[endRank][endFile] <= 1) {
+        //             if(
+        //                 (attackMap[startRank][startFile] != 1 && attackMap[endRank][endFile] == 1) ||
+        //                 (attackMap[startRank][startFile] == 1 && attackMap[endRank][endFile] == 1)
+        //             ) legalMove.add(move);
+        //         }
+        //     }
+        // } else return pseudoLegalMove;
 
         int[] kingSquare = getKingSquare(board, currentPlayer);
         for(Move move : pseudoLegalMove) {
@@ -224,7 +359,7 @@ public class Move {
             if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(!Piece.isColor(piece, pieceOnTarget)) {
-                    availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, Flag.NONE));
+                    availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, Flag.CAPTURE));
                 }
             }
         }
@@ -247,11 +382,9 @@ public class Move {
                 int pieceOnTarget = board[targetRank][targetFile];
                 
                 if(Piece.isColor(piece, pieceOnTarget)) break;
-                availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, Flag.NONE));
+                availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, Flag.CAPTURE));
                 if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
-                    if(!Piece.isColor(piece, pieceOnTarget)) {
-                        break;
-                    }
+                    if(!Piece.isColor(piece, pieceOnTarget)) break;
                 }
             }
         }
@@ -267,7 +400,7 @@ public class Move {
             if(Piece.isInRange(targetRank, targetFile)) {
                 int pieceOnTarget = board[targetRank][targetFile];
                 if(Piece.isColor(piece, pieceOnTarget)) continue;
-                availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, Flag.NONE));
+                availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, Flag.CAPTURE));
             } else continue;
         }
         return availableMove;
@@ -295,7 +428,7 @@ public class Move {
                 }
                 if(Piece.getPieceType(pieceOnTarget) != Piece.None) {
                     if(!Piece.isColor(piece, pieceOnTarget)) {
-                        availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION : Flag.NONE));
+                        availableMove.add(new Move(currentRank, currentFile, targetRank, targetFile, targetRank == promotionRank ? Flag.PROMOTION_CAPTURE : Flag.CAPTURE));
                     } else continue;
                 } else continue;
             }
